@@ -1,0 +1,29 @@
+{
+    "coq_version":  "8.20.1",
+    "name":  "PXL Total Packet",
+    "paths":  {
+                  "coq":  "coq",
+                  "prelude":  "C:\\Coq-Platform~8.20~2025.01\\lib\\coq\\theories"
+              },
+    "created_utc":  "2025-10-04T17:23:28.9100455Z",
+    "logical_root":  "PXLs",
+    "notes":  "Core constructive; overlays removable; Phase-4 canonical lemmas scoped.",
+    "artifacts":  [
+                      {
+                          "path":  "coq/PXLv3.v",
+                          "sha256":  "a3c3a0277cc1edfd39cac22b3db500bfabd4ac54ebb38e5e9de2bea6c57a9ea9"
+                      },
+                      {
+                          "path":  "coq/PXL_Deep_Soundness.v",
+                          "sha256":  "0dfb0629de90366123c699ab4987d72c2ab2c0746b273dcdc81c676756082860"
+                      },
+                      {
+                          "path":  "coq/Assumptions.v",
+                          "sha256":  "4ef1619a147fd2d86e8d7c734d2cee52330ba3431571c506c6cee458dce1cd5b"
+                      },
+                      {
+                          "path":  "coq/PXL_Canonical_Kernel.v",
+                          "sha256":  "08383da79a7e3f880ec16b08d31f39cba35709d4cb6b73a2d26d1b142ca1240d"
+                      }
+                  ]
+}
