@@ -61,3 +61,6 @@ Remove `PXL_TriuneTheory.v`, `PXL_Completeness_Interface.v`, `PXL_Completeness_I
 - Core files: no Axiom/Parameter; admits only where documented (e.g., decidability/completeness internals if present in your snapshot).
 - Overlays: admits may remain for metaphysical statements; they are removable without affecting core.
 
+
+### Toolchain install (Coq Platform)
+Install Coq Platform 2024.09 (Coq 8.20.1). On Ubuntu CI we use `coqorg/coq:8.20.1`.
