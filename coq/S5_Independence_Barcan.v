@@ -1,3 +1,4 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 From Coq Require Import Logic.Classical.
 
 (*
@@ -64,3 +65,4 @@ Proof.
 Qed.
 
 End Barcan_Constant.
+

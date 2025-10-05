@@ -1,0 +1,33 @@
+DIGEST 5e540c050c8433f7613ec1cd65c888e1
+FPXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals
+R63:67 PXLs.PXLv3 <> <> lib
+R69:86 PXLs.PXL_Deep_Soundness <> <> lib
+R88:98 PXLs.Assumptions <> <> lib
+R100:119 PXLs.PXL_Canonical_Kernel <> <> lib
+R199:201 PXLs.PXL_Deep_Soundness <> And constr
+R204:207 PXLs.PXL_Deep_Soundness <> Impl constr
+R215:218 PXLs.PXL_Deep_Soundness <> Impl constr
+not 185:185 <> :::x_'⩪'_x
+sec 250:259 <> ModalDuals
+var 273:274 ModalDuals φ
+R278:281 PXLs.PXL_Deep_Soundness <> form ind
+def 347:353 <> Dia_def
+R359:362 PXLs.PXL_Deep_Soundness <> form ind
+binder 356:357 <> ψ:3
+R367:370 PXLs.PXL_Deep_Soundness <> form ind
+R375:377 PXLs.PXL_Deep_Soundness <> Neg constr
+R380:382 PXLs.PXL_Deep_Soundness <> Box constr
+R385:387 PXLs.PXL_Deep_Soundness <> Neg constr
+R389:390 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> ψ:3 var
+prf 603:616 <> dia_dual_equiv
+R620:623 PXLs.PXL_Deep_Soundness <> Prov ind
+R632:636 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> :::x_'⩪'_x not
+R626:628 PXLs.PXL_Deep_Soundness <> Dia constr
+R630:631 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> ModalDuals.φ var
+R637:643 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> Dia_def def
+R645:646 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> ModalDuals.φ var
+R637:643 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> Dia_def def
+R645:646 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> ModalDuals.φ var
+R626:628 PXLs.PXL_Deep_Soundness <> Dia constr
+R630:631 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> ModalDuals.φ var
+R807:816 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals ModalDuals <> sec

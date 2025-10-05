@@ -1,10 +1,25 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 (* PXL_Expressiveness_Intertranslation.v *)
-Require Import PXLv3 PXL_Deep_Soundness Assumptions PXL_Completeness_Truth_WF.
-Section Intertranslation.
-  Fixpoint T (φ:form) : s5_form := (* PXL→S5 *) admit.
-  Fixpoint U (ψ:s5_form) : form := (* S5→PXL *) admit.
-  Theorem UoT_sound : forall φ, Prov (Iff (U (T φ)) φ). Admitted.
-  Theorem ToU_complete : forall ψ, s5_valid (iff (T (U ψ)) ψ). Admitted.
-  Theorem conservativity_S5_to_PXL : forall ψ, s5_valid ψ -> Prov (U ψ). Admitted.
-  Theorem conservativity_PXL_to_S5 : forall φ, Prov φ -> s5_valid (T φ). Admitted.
-End Intertranslation.
+From PXLs Require Import PXLv3 PXL_Deep_Soundness Assumptions PXL_Canonical_Kernel.
+
+Inductive s5_form :=
+| s5Var  : nat -> s5_form
+| s5Neg  : s5_form -> s5_form
+| s5Impl : s5_form -> s5_form -> s5_form
+| s5Box  : s5_form -> s5_form
+| s5Dia  : s5_form -> s5_form.
+
+(* Placeholder for S5 validity *)
+Parameter s5_valid : s5_form -> Prop.
+Parameter iff : s5_form -> s5_form -> s5_form.  (* equivalence in S5 *)
+
+Parameter T : form -> s5_form.
+Parameter U : s5_form -> form.
+
+(* Adequacy wrapper: PXL âŠ¢ Ï†  â‡’  S5 âŠ¨ T Ï† *)
+Theorem conserv_PXL_to_S5 : forall Ï†, Prov Ï† -> s5_valid (T Ï†).
+Proof.
+  (* Replace the next line with your existing adequacy result,
+     typically: Prov Ï† â‡’ valid (T Ï†). If your valid type is s5_valid : s5_form -> Prop,
+     then return s5_valid (T Ï†). *)
+  Admitted.

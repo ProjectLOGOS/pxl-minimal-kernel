@@ -1,4 +1,4 @@
--Q . PXLs
+-Q coq PXLs
 coq/PXLv3.v
 coq/PXL_Deep_Soundness.v
 coq/Assumptions.v

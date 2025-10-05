@@ -1,4 +1,5 @@
-(* PXL_Completeness_Instance.v — Concrete completeness instance *)
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
+(* PXL_Completeness_Instance.v â€” Concrete completeness instance *)
 (* Provides actual Phase-3 semantics and Phase-4 truth lemma *)
 
 From PXLs Require Import PXLv3 PXL_Decidability PXL_Completeness_Interface.
@@ -10,10 +11,10 @@ Definition In_set (G:set) (p:form) : Prop := G p.
 (* Maximal consistent theories with closure *)
 Record mct (G : set) : Prop := {
   mct_cons : ~ (exists p, G p /\ G (Neg p));
-  mct_closed : forall φ ψ, Prov (Impl φ ψ) -> G φ -> G ψ;
-  mct_mp : forall φ ψ, G (Impl φ ψ) -> G φ -> G ψ;
-  mct_max : forall φ, G φ \/ G (Neg φ);
-  mct_nec : forall φ, G φ -> G (Box φ)
+  mct_closed : forall Ï† Ïˆ, Prov (Impl Ï† Ïˆ) -> G Ï† -> G Ïˆ;
+  mct_mp : forall Ï† Ïˆ, G (Impl Ï† Ïˆ) -> G Ï† -> G Ïˆ;
+  mct_max : forall Ï†, G Ï† \/ G (Neg Ï†);
+  mct_nec : forall Ï†, G Ï† -> G (Box Ï†)
 }.
 
 (* Canonical model *)
@@ -92,22 +93,22 @@ Admitted.
 Lemma forces_PL_neg_imp_any w a b : forces w (Impl (Neg a) (Impl a b)).
 Proof. Admitted.
 
-Lemma forces_modal_dual_dia_box1 w φ : forces w (Impl (Neg (Dia φ)) (Box (Neg φ))).
+Lemma forces_modal_dual_dia_box1 w Ï† : forces w (Impl (Neg (Dia Ï†)) (Box (Neg Ï†))).
 Admitted.
 
-Lemma forces_modal_dual_dia_box2 w φ : forces w (Impl (Box (Neg φ)) (Neg (Dia φ))).
+Lemma forces_modal_dual_dia_box2 w Ï† : forces w (Impl (Box (Neg Ï†)) (Neg (Dia Ï†))).
 Admitted.
 
-Lemma forces_modal_dual_box_dia1 w φ : forces w (Impl (Neg (Box φ)) (Dia (Neg φ))).
+Lemma forces_modal_dual_box_dia1 w Ï† : forces w (Impl (Neg (Box Ï†)) (Dia (Neg Ï†))).
 Admitted.
 
-Lemma forces_modal_dual_box_dia2 w φ : forces w (Impl (Dia (Neg φ)) (Neg (Box φ))).
+Lemma forces_modal_dual_box_dia2 w Ï† : forces w (Impl (Dia (Neg Ï†)) (Neg (Box Ï†))).
 Admitted.
 
 (* Truth lemma *)
-Theorem truth : forall φ, Prov φ -> forall w, forces w φ.
+Theorem truth : forall Ï†, Prov Ï† -> forall w, forces w Ï†.
 Proof. Admitted.
 
 (* Nec rule *)
-Theorem nec_rule : forall φ, Prov φ -> Prov (Box φ).
+Theorem nec_rule : forall Ï†, Prov Ï† -> Prov (Box Ï†).
 Proof. apply nec. Qed.

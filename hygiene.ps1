@@ -1,4 +1,5 @@
-﻿$paths = Get-Content _CoqProject.minimal | Where-Object {$_ -notmatch '^\s*$' -and $_ -notmatch '^-' }
+﻿# SPDX-License-Identifier: Apache-2.0
+$paths = Get-Content _CoqProject.minimal | Where-Object {$_ -notmatch '^\s*$' -and $_ -notmatch '^-' }
 $files = $paths | ForEach-Object { $_.Trim() } | Get-ChildItem
 $bad = $files | Select-String -Pattern '\bAdmitted\b|\bAxiom\b|\bParameter\b'
 # Allow Axiom in Assumptions.v as quarantined
@@ -9,3 +10,4 @@ if ($bad) {
   throw "Placeholders detected in minimal kernel."
 }
 "OK" | Tee-Object -FilePath hygiene.txt
+

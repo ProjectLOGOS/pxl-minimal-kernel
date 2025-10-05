@@ -1,0 +1,59 @@
+DIGEST cf94f89886340b6e3e26c2f6042d20b4
+FPXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay
+R177:181 PXLs.PXLv3 <> <> lib
+R183:193 PXLs.Assumptions <> <> lib
+R195:246 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> <> lib
+R248:298 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> <> lib
+R300:354 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> <> lib
+R381:384 PXLs.PXLv3 <> Conj constr
+R398:401 PXLs.PXLv3 <> Impl constr
+R387:390 PXLs.PXLv3 <> Impl constr
+not 367:367 <> :::x_'⩪'_x
+R449:450 PXLs.PXLv3 <> mp constr
+ax 516:523 <> ax_PL_dn
+binder 534:534 <> p:1
+R537:540 PXLs.PXLv3 <> Prov ind
+R543:546 PXLs.PXLv3 <> Impl constr
+R562:562 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> p:1 var
+R549:551 PXLs.PXLv3 <> Neg constr
+R554:556 PXLs.PXLv3 <> Neg constr
+R558:558 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> p:1 var
+ax 572:579 <> ax_PL_em
+binder 590:590 <> p:4
+R593:596 PXLs.PXLv3 <> Prov ind
+R599:602 PXLs.PXLv3 <> Disj constr
+R607:609 PXLs.PXLv3 <> Neg constr
+R611:611 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> p:4 var
+R604:604 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> p:4 var
+prf 660:667 <> dn_law_l
+binder 669:670 <> φ:7
+R674:677 PXLs.PXLv3 <> Prov ind
+R680:683 PXLs.PXLv3 <> Impl constr
+R700:701 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> φ:7 var
+R686:688 PXLs.PXLv3 <> Neg constr
+R691:693 PXLs.PXLv3 <> Neg constr
+R695:696 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> φ:7 var
+R719:726 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> ax_PL_dn prfax
+R719:726 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> ax_PL_dn prfax
+prf 771:785 <> de_morgan_and_l
+binder 787:788 <> φ:8
+binder 790:791 <> ψ:9
+R795:798 PXLs.PXLv3 <> Prov ind
+R801:804 PXLs.PXLv3 <> Impl constr
+R826:829 PXLs.PXLv3 <> Disj constr
+R841:843 PXLs.PXLv3 <> Neg constr
+R845:846 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> ψ:9 var
+R832:834 PXLs.PXLv3 <> Neg constr
+R836:837 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> φ:8 var
+R807:809 PXLs.PXLv3 <> Neg constr
+R812:815 PXLs.PXLv3 <> Conj constr
+R820:821 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> ψ:9 var
+R817:818 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> φ:8 var
+R905:912 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> ax_PL_em prfax
+R905:912 PXLs.phase6_expressiveness.PXL_Expressiveness_ClassicalOverlay <> ax_PL_em prfax
+R1015:1029 PXLs.PXLv3 <> ax_PL_and_intro constr
+R1015:1029 PXLs.PXLv3 <> ax_PL_and_intro constr
+R1063:1071 PXLs.PXLv3 <> ax_PL_imp constr
+R1080:1083 PXLs.PXLv3 <> Conj constr
+R1063:1071 PXLs.PXLv3 <> ax_PL_imp constr
+R1080:1083 PXLs.PXLv3 <> Conj constr

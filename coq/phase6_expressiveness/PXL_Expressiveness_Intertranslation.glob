@@ -1,0 +1,58 @@
+DIGEST 0ee681f41bb0900dd4a90d2d74f7cde1
+FPXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation
+R69:73 PXLs.PXLv3 <> <> lib
+R75:92 PXLs.PXL_Deep_Soundness <> <> lib
+R94:104 PXLs.Assumptions <> <> lib
+R106:125 PXLs.PXL_Canonical_Kernel <> <> lib
+ind 139:145 <> s5_form
+constr 152:156 <> s5Var
+constr 178:182 <> s5Neg
+constr 208:213 <> s5Impl
+constr 249:253 <> s5Box
+constr 279:283 <> s5Dia
+R164:167 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R161:163 Coq.Init.Datatypes <> nat ind
+R168:174 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R194:197 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R187:193 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R198:204 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R224:227 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R217:223 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R235:238 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R228:234 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R239:245 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R265:268 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R258:264 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R269:275 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R295:298 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R288:294 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+R299:305 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form:1 ind
+scheme 139:145 <> s5_form_rect
+scheme 139:145 <> s5_form_ind
+scheme 139:145 <> s5_form_rec
+scheme 139:145 <> s5_form_sind
+ax 353:360 <> s5_valid
+R371:374 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R364:370 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form ind
+ax 391:393 <> iff
+R404:407 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R397:403 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form ind
+R415:418 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R408:414 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form ind
+R419:425 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form ind
+ax 464:464 <> T
+R472:475 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R468:471 PXLs.PXL_Deep_Soundness <> form ind
+R476:482 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form ind
+ax 495:495 <> U
+R506:509 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R499:505 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_form ind
+R510:513 PXLs.PXL_Deep_Soundness <> form ind
+prf 578:594 <> conserv_PXL_to_S5
+binder 605:606 <> φ:11
+R616:619 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R609:612 PXLs.PXL_Deep_Soundness <> Prov ind
+R614:615 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> φ:11 var
+R620:627 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> s5_valid defax
+R630:630 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> T defax
+R632:633 PXLs.phase6_expressiveness.PXL_Expressiveness_Intertranslation <> φ:11 var

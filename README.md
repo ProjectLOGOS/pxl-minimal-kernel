@@ -1,3 +1,4 @@
+﻿<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 # PXL Final Proofs
 
 This repository contains the final proofs for the Protopraxic Logic (PXL) system, a modal logic framework.
@@ -8,6 +9,30 @@ This repository contains the final proofs for the Protopraxic Logic (PXL) system
 - **Phase 2**: Meta-theorems (`PXLv3_Meta.v`)
 - **Phase 3**: S5 Kripke semantics (`S5_Kripke.v`)
 - **Phase 5**: Decidability (`PXL_Decidability.v`)
+- **Phase 6**: Expressiveness (NNF, Filtration, Intertranslation)
+
+## Phase-6 Expressiveness
+
+Phase-6 kernel is IL-complete with zero admits; classical results live in `PXL_Expressiveness_ClassicalOverlay.v`.
+
+### Guarantees
+- **Kernel**: IL theorems, NNF witness with nnf_dirR and nnf_dirL: nnf_out â†’ Â¬Â¬Ï†, filtration â†’ FMP (satisfiability form), conserv_PXL_to_S5 (soundness).
+- **Overlay**: DN left, full De Morgan, modal dual reverse, equivalence wrappers, classical macro round-trip.
+
+### Building
+```bash
+make kernel  # Kernel-only: IL-complete, zero admits
+make overlay # Classical extensions
+make all     # Both
+make hygiene # Fail CI on any Axiom|Admitted outside overlay
+```
+
+### Files
+- Kernel: `PXL_Expressiveness_Boolean.v`, `PXL_Expressiveness_NormalForms.v`, `PXL_Expressiveness_ModalDuals.v`, `PXL_Expressiveness_Filtration.v`, `PXL_Expressiveness_Intertranslation.v`
+- Overlay: `PXL_Expressiveness_ClassicalOverlay.v`
+
+### Hygiene
+Zero `Axiom`/`Admitted` in kernel; overlay houses classical strength when needed.
 
 ## Triune Overlay
 
@@ -64,3 +89,10 @@ Remove `PXL_TriuneTheory.v`, `PXL_Completeness_Interface.v`, `PXL_Completeness_I
 
 ### Toolchain install (Coq Platform)
 Install Coq Platform 2024.09 (Coq 8.20.1). On Ubuntu CI we use `coqorg/coq:8.20.1`.
+
+## License
+
+- Code: Apache-2.0 (see \LICENSE\, SPDX headers in source)
+- Documentation: CC BY 4.0 (see \docs/LICENSE\, SPDX headers in docs)
+- NOTICE file included for Apache-2.0 attribution.
+

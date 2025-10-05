@@ -1,3 +1,4 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 From Coq Require Import List.
 Import ListNotations. Set Implicit Arguments.
 
@@ -29,12 +30,13 @@ Inductive Prov : form -> Prop :=
 | ax_PL_neg_intro : forall p, Prov (Impl (Impl p Bot) (Neg p))
 | ax_PL_imp_exch : forall p q r, Prov (Impl (Impl p (Impl q r)) (Impl q (Impl p r)))
 | ax_PL_neg_imp_any : forall a b, Prov (Impl (Neg a) (Impl a b))
-| ax_modal_dual_dia_box1 : forall φ, Prov (Impl (Neg (Dia φ)) (Box (Neg φ)))
-| ax_modal_dual_dia_box2 : forall φ, Prov (Impl (Box (Neg φ)) (Neg (Dia φ)))
-| ax_modal_dual_box_dia1 : forall φ, Prov (Impl (Neg (Box φ)) (Dia (Neg φ)))
-| ax_modal_dual_box_dia2 : forall φ, Prov (Impl (Dia (Neg φ)) (Neg (Box φ)))
+| ax_modal_dual_dia_box1 : forall Ï†, Prov (Impl (Neg (Dia Ï†)) (Box (Neg Ï†)))
+| ax_modal_dual_dia_box2 : forall Ï†, Prov (Impl (Box (Neg Ï†)) (Neg (Dia Ï†)))
+| ax_modal_dual_box_dia1 : forall Ï†, Prov (Impl (Neg (Box Ï†)) (Dia (Neg Ï†)))
+| ax_modal_dual_box_dia2 : forall Ï†, Prov (Impl (Dia (Neg Ï†)) (Neg (Box Ï†)))
 | mp      : forall p q, Prov (Impl p q) -> Prov p -> Prov q
 | nec     : forall p, Prov p -> Prov (Box p).
 
 Lemma mp2 p q r : Prov (Impl p (Impl q r)) -> Prov p -> Prov q -> Prov r.
 Proof. intros H1 H2 H3. eapply mp; [eapply mp; eauto|eauto]. Qed.
+

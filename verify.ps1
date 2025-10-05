@@ -1,4 +1,5 @@
-﻿Set-StrictMode -Version Latest
+﻿# SPDX-License-Identifier: Apache-2.0
+Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
@@ -19,3 +20,4 @@ Write-Host "== Hygiene check =="
 powershell -NoProfile -ExecutionPolicy Bypass -File .\hygiene.ps1
 
 Write-Host "== Done =="
+

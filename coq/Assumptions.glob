@@ -1,0 +1,49 @@
+DIGEST bef9b9ee39c611d019193a2b7848b3a0
+FPXLs.Assumptions
+R105:109 PXLs.PXLv3 <> <> lib
+ax 168:172 <> Model
+ax 192:192 <> R
+R201:204 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R196:200 PXLs.Assumptions <> Model defax
+R208:211 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R205:207 Coq.Init.Datatypes <> nat ind
+R215:218 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R212:214 Coq.Init.Datatypes <> nat ind
+ax 235:240 <> forces
+R249:252 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R244:248 PXLs.Assumptions <> Model defax
+R256:259 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R253:255 Coq.Init.Datatypes <> nat ind
+R264:267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R260:263 PXLs.PXLv3 <> form ind
+ax 380:396 <> NotAll_to_ExNot_R
+R412:416 PXLs.Assumptions <> Model defax
+binder 410:410 <> M:7
+binder 419:419 <> w:8
+binder 421:422 <> φ:9
+R429:429 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R472:480 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R430:431 Coq.Init.Logic <> ::type_scope:'~'_x not
+binder 439:439 <> v:10
+R449:452 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R442:442 PXLs.Assumptions <> R defax
+R444:444 PXLs.Assumptions <> M:7 var
+R446:446 PXLs.Assumptions <> w:8 var
+R448:448 PXLs.Assumptions <> v:10 var
+R453:458 PXLs.Assumptions <> forces defax
+R460:460 PXLs.Assumptions <> M:7 var
+R462:462 PXLs.Assumptions <> v:10 var
+R465:467 PXLs.PXLv3 <> Neg constr
+R469:470 PXLs.Assumptions <> φ:9 var
+R481:487 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R489:490 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 488:488 <> v:11
+R498:501 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R491:491 PXLs.Assumptions <> R defax
+R493:493 PXLs.Assumptions <> M:7 var
+R495:495 PXLs.Assumptions <> w:8 var
+R497:497 PXLs.Assumptions <> v:11 var
+R502:507 PXLs.Assumptions <> forces defax
+R509:509 PXLs.Assumptions <> M:7 var
+R511:511 PXLs.Assumptions <> v:11 var
+R513:514 PXLs.Assumptions <> φ:9 var

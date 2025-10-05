@@ -1,4 +1,5 @@
-(* PXL_Completeness_Truth_WF.v — restored scaffold (kernel constructive) *)(* PXL_Completeness_Truth_WF.v — restored scaffold (kernel constructive) *)(* PXL_Completeness_Truth_WF.v — restored scaffold (kernel constructive) *)
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
+(* PXL_Completeness_Truth_WF.v â€” restored scaffold (kernel constructive) *)(* PXL_Completeness_Truth_WF.v â€” restored scaffold (kernel constructive) *)(* PXL_Completeness_Truth_WF.v â€” restored scaffold (kernel constructive) *)
 
 
 
@@ -66,9 +67,9 @@ Record mct (G : set) : Prop := {| ax_PL_imp : forall p q r, Prov (Impl (Impl p q
 
   mct_cons : consistent G;
 
-  mct_closed : forall φ ψ, Prov (Impl φ ψ) -> G φ -> G ψ;| ax_PL_and1 : forall p q, Prov (Impl (And p q) p)        * pose proof (mct_thm Hm _ (prov_neg_is_impl a)) as Hneg.
+  mct_closed : forall Ï† Ïˆ, Prov (Impl Ï† Ïˆ) -> G Ï† -> G Ïˆ;| ax_PL_and1 : forall p q, Prov (Impl (And p q) p)        * pose proof (mct_thm Hm _ (prov_neg_is_impl a)) as Hneg.
 
-  mct_max : forall φ, G φ \/ G (Neg φ)
+  mct_max : forall Ï†, G Ï† \/ G (Neg Ï†)
 
 }.| ax_PL_and2 : forall p q, Prov (Impl (And p q) q)          pose proof (mct_thm Hm _ (prov_exfalso b)) as Hb_imp.
 
@@ -76,9 +77,9 @@ Record mct (G : set) : Prop := {| ax_PL_imp : forall p q r, Prov (Impl (Impl p q
 
 (* Base axioms for maximal theory closure *)| ax_PL_or  : forall p q r, Prov (Impl p r) -> Prov (Impl q r) -> Prov (Impl (Or p q) r)          exact (mct_mp Hm _ _ Hb_imp (mct_mp Hm _ _ Hneg Hna)).
 
-Axiom maximal_contains_theorems : forall G, mct G -> forall φ, Prov φ -> In_set G φ.
+Axiom maximal_contains_theorems : forall G, mct G -> forall Ï†, Prov Ï† -> In_set G Ï†.
 
-Axiom maximal_MP_closed : forall G, mct G -> forall φ ψ, In_set G (Impl φ ψ) -> In_set G φ -> In_set G ψ.| ax_PL_em  : forall p, Prov (Or p (Neg p))      + intros Hab.vability *)
+Axiom maximal_MP_closed : forall G, mct G -> forall Ï† Ïˆ, In_set G (Impl Ï† Ïˆ) -> In_set G Ï† -> In_set G Ïˆ.| ax_PL_em  : forall p, Prov (Or p (Neg p))      + intros Hab.vability *)
 
 
 
@@ -117,19 +118,19 @@ Record mct (G : set) : Prop := {  | ax_PL_em  : forall p, Prov (Or p (Neg p))
 
   mct_cons : consistent G;  | ax_PL_neg1 : forall p, Prov (Impl (Impl p Bot) (Neg p))
 
-  mct_closed : forall φ ψ, Prov (Impl φ ψ) -> G φ -> G ψ;  | ax_PL_neg2 : forall p, Prov (Impl (Neg p) (Impl p Bot))
+  mct_closed : forall Ï† Ïˆ, Prov (Impl Ï† Ïˆ) -> G Ï† -> G Ïˆ;  | ax_PL_neg2 : forall p, Prov (Impl (Neg p) (Impl p Bot))
 
-  mct_max : forall φ, G φ \/ G (Neg φ)  | ax_PL_neg_impl1 : forall φ ψ, Prov (Impl (Neg (Impl φ ψ)) (And φ (Neg ψ)))
+  mct_max : forall Ï†, G Ï† \/ G (Neg Ï†)  | ax_PL_neg_impl1 : forall Ï† Ïˆ, Prov (Impl (Neg (Impl Ï† Ïˆ)) (And Ï† (Neg Ïˆ)))
 
-}.  | ax_PL_neg_impl2 : forall φ ψ, Prov (Impl (And φ (Neg ψ)) (Neg (Impl φ ψ)))
+}.  | ax_PL_neg_impl2 : forall Ï† Ïˆ, Prov (Impl (And Ï† (Neg Ïˆ)) (Neg (Impl Ï† Ïˆ)))
 
   | mp    : forall p q, Prov (Impl p q) -> Prov p -> Prov q
 
 (* Base axioms for maximal theory closure *)  | nec   : forall p, Prov p -> Prov (Box p).
 
-Axiom maximal_contains_theorems : forall G, mct G -> forall φ, Prov φ -> In_set G φ.
+Axiom maximal_contains_theorems : forall G, mct G -> forall Ï†, Prov Ï† -> In_set G Ï†.
 
-Axiom maximal_MP_closed : forall G, mct G -> forall φ ψ, In_set G (Impl φ ψ) -> In_set G φ -> In_set G ψ.Axiom ax_PL_or : forall p q r, Prov (Impl p r) -> Prov (Impl q r) -> Prov (Impl (Or p q) r).
+Axiom maximal_MP_closed : forall G, mct G -> forall Ï† Ïˆ, In_set G (Impl Ï† Ïˆ) -> In_set G Ï† -> In_set G Ïˆ.Axiom ax_PL_or : forall p q r, Prov (Impl p r) -> Prov (Impl q r) -> Prov (Impl (Or p q) r).
 
 
 
@@ -152,13 +153,13 @@ Definition extends (G H:set) : Prop := forall p, G p -> H p.Definition consisten
 Lemma placeholder : True.Record mct (G : set) : Prop := {
 
 Proof. trivial. Qed.  mct_cons : consistent G;
-  mct_total : forall φ, In_set G φ \/ In_set G (Neg φ);
-  mct_thm : forall φ, Prov φ -> In_set G φ;
-  mct_mp : forall φ ψ, In_set G (Impl φ ψ) -> In_set G φ -> In_set G ψ
+  mct_total : forall Ï†, In_set G Ï† \/ In_set G (Neg Ï†);
+  mct_thm : forall Ï†, Prov Ï† -> In_set G Ï†;
+  mct_mp : forall Ï† Ïˆ, In_set G (Impl Ï† Ïˆ) -> In_set G Ï† -> In_set G Ïˆ
 }.
 
 (* Maximal consistent sets *)
-Definition maximal (G:set) : Prop := consistent G /\ forall φ, In_set G φ \/ In_set G (Neg φ).
+Definition maximal (G:set) : Prop := consistent G /\ forall Ï†, In_set G Ï† \/ In_set G (Neg Ï†).
 
 (* --- Primitives assumed already defined in your repo --- *)
 (* Prov, chain, Lindenbaum, bridges, maximal lemmas:               *)
@@ -168,8 +169,8 @@ Definition maximal (G:set) : Prop := consistent G /\ forall φ, In_set G φ \/ I
 (* ---------- Section: modal logic machinery ---------- *)
 Section KernelParams.
 
-Variable Γ : set.
-Variable H : mct Γ.
+Variable Î“ : set.
+Variable H : mct Î“.
 
   (* Your existing propositional truth lemma machinery goes here:
      - Prov inductive + propositional axioms
@@ -195,58 +196,58 @@ Variable H : mct Γ.
     end.
 
   (* Finite support for Prov derivations *)
-  Lemma prov_finite_support : forall φ (prf : Prov φ) Σ,
-    (forall ψ, Prov ψ -> In_set Σ ψ) ->
-    exists Γf, forall χ, In χ Γf -> In_set Σ χ.
+  Lemma prov_finite_support : forall Ï† (prf : Prov Ï†) Î£,
+    (forall Ïˆ, Prov Ïˆ -> In_set Î£ Ïˆ) ->
+    exists Î“f, forall Ï‡, In Ï‡ Î“f -> In_set Î£ Ï‡.
   Proof.
-    intros φ prf Σ Hprov.
+    intros Ï† prf Î£ Hprov.
     induction prf.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
-    - exists []. intros χ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
+    - exists []. intros Ï‡ HIn. inversion HIn.
     - (* mp case *)
-      destruct IHprf1 as [Γf1 H1]. destruct IHprf2 as [Γf2 H2].
-      exists (nodup form_eq_dec (Γf1 ++ Γf2)).
-      intros χ HIn. apply nodup_In in HIn. apply in_app_or in HIn as [HIn1 | HIn2].
+      destruct IHprf1 as [Î“f1 H1]. destruct IHprf2 as [Î“f2 H2].
+      exists (nodup form_eq_dec (Î“f1 ++ Î“f2)).
+      intros Ï‡ HIn. apply nodup_In in HIn. apply in_app_or in HIn as [HIn1 | HIn2].
       + apply H1; assumption.
       + apply H2; assumption.
     - (* nec case *)
-      destruct IHprf as [Γf1 H1].
-      exists Γf1.
-      intros χ HIn. apply H1; assumption.
+      destruct IHprf as [Î“f1 H1].
+      exists Î“f1.
+      intros Ï‡ HIn. apply H1; assumption.
   Qed.
 
   (* ---------- VARIABLES (constructive where possible) ---------- *)
-  Lemma maximal_contains_theorems : forall Γ, maximal Γ -> forall φ, Prov φ -> In_set Γ φ.
+  Lemma maximal_contains_theorems : forall Î“, maximal Î“ -> forall Ï†, Prov Ï† -> In_set Î“ Ï†.
   Proof. Admitted.
-  Lemma max_and : forall Γ φ ψ, maximal Γ -> In_set Γ (And φ ψ) -> (In_set Γ φ /\ In_set Γ ψ).
+  Lemma max_and : forall Î“ Ï† Ïˆ, maximal Î“ -> In_set Î“ (And Ï† Ïˆ) -> (In_set Î“ Ï† /\ In_set Î“ Ïˆ).
   Proof. Admitted.
-  Lemma max_orL : forall Γ φ ψ, maximal Γ -> In_set Γ (Or φ ψ) -> (In_set Γ φ \/ In_set Γ ψ).
+  Lemma max_orL : forall Î“ Ï† Ïˆ, maximal Î“ -> In_set Î“ (Or Ï† Ïˆ) -> (In_set Î“ Ï† \/ In_set Î“ Ïˆ).
   Proof. Admitted.
-  Lemma max_impl : forall Γ φ ψ, maximal Γ -> In_set Γ (Impl φ ψ) -> (In_set Γ φ -> In_set Γ ψ).
+  Lemma max_impl : forall Î“ Ï† Ïˆ, maximal Î“ -> In_set Î“ (Impl Ï† Ïˆ) -> (In_set Î“ Ï† -> In_set Î“ Ïˆ).
   Proof. Admitted.
-  Lemma max_neg : forall Γ φ, maximal Γ -> In_set Γ (Neg φ) -> ~ In_set Γ φ.
-  Proof. Admitted.
-
-  Lemma decide : forall φ, {Prov φ} + {~ Prov φ}.
+  Lemma max_neg : forall Î“ Ï†, maximal Î“ -> In_set Î“ (Neg Ï†) -> ~ In_set Î“ Ï†.
   Proof. Admitted.
 
-  Lemma form_neq_neg : forall φ, φ <> Neg φ.
+  Lemma decide : forall Ï†, {Prov Ï†} + {~ Prov Ï†}.
+  Proof. Admitted.
+
+  Lemma form_neq_neg : forall Ï†, Ï† <> Neg Ï†.
   Proof.
-    induction φ; intro Heq; inversion Heq.
-    - apply IHφ. assumption.
+    induction Ï†; intro Heq; inversion Heq.
+    - apply IHÏ†. assumption.
   Qed.
 
   Lemma neg_inj : forall a b, Neg a = Neg b -> a = b.
@@ -278,19 +279,19 @@ Variable H : mct Γ.
   (* Additional axioms for the proofs *)
   Axiom prov_imp_exch : forall p q r, Prov (Impl p (Impl q r)) -> Prov (Impl q (Impl p r)).
   Axiom neg_imp_to_any : forall a b, Prov (Impl (Neg a) (Impl a b)).
-  Lemma modal_dual_dia_box1 : forall φ, Prov (Impl (Neg (Dia φ)) (Box (Neg φ))).
+  Lemma modal_dual_dia_box1 : forall Ï†, Prov (Impl (Neg (Dia Ï†)) (Box (Neg Ï†))).
   Proof.
-    intros φ. (* Use canonical semantics + MCT closure *)
-    (* Outline: if ¬◇φ then every accessible world fails φ, hence □¬φ *)
+    intros Ï†. (* Use canonical semantics + MCT closure *)
+    (* Outline: if Â¬â—‡Ï† then every accessible world fails Ï†, hence â–¡Â¬Ï† *)
   Admitted.
 
-  Lemma modal_dual_box_dia2 : forall φ, Prov (Impl (Neg (Box φ)) (Dia (Neg φ))).
+  Lemma modal_dual_box_dia2 : forall Ï†, Prov (Impl (Neg (Box Ï†)) (Dia (Neg Ï†))).
   Proof.
-    intros φ. (* Symmetric argument to dual above *)
+    intros Ï†. (* Symmetric argument to dual above *)
   Admitted.
-  Axiom can_R_box_elim : forall Γ Δ HΓ HΔ φ, can_R (exist _ Γ HΓ) (exist _ Δ HΔ) -> In_set Γ (Box φ) -> In_set Δ φ.
-  Axiom dia_membership_to_successor : forall Γ HΓ φ, In_set Γ (Dia φ) -> {Δ : set & {HΔ : mct Δ & {HR : can_R (exist _ Γ HΓ) (exist _ Δ HΔ) & In_set Δ φ}}}.
-  Axiom explosion_from_neg_and_pos : forall Δ φ, In_set Δ (Neg φ) -> In_set Δ φ -> False.
+  Axiom can_R_box_elim : forall Î“ Î” HÎ“ HÎ” Ï†, can_R (exist _ Î“ HÎ“) (exist _ Î” HÎ”) -> In_set Î“ (Box Ï†) -> In_set Î” Ï†.
+  Axiom dia_membership_to_successor : forall Î“ HÎ“ Ï†, In_set Î“ (Dia Ï†) -> {Î” : set & {HÎ” : mct Î” & {HR : can_R (exist _ Î“ HÎ“) (exist _ Î” HÎ”) & In_set Î” Ï†}}}.
+  Axiom explosion_from_neg_and_pos : forall Î” Ï†, In_set Î” (Neg Ï†) -> In_set Î” Ï† -> False.
 
   (* ---- Helpers: tautologies as theorems in your Hilbert base ---- *)
   Lemma prov_imp_weaken (a b : form) : Prov (Impl b (Impl a b)).
@@ -318,54 +319,54 @@ Variable H : mct Γ.
   Proof.
     Admitted.
 
-  Definition add (Σ : set) (φ : form) : set := fun ψ => In_set Σ ψ \/ ψ = φ.
+  Definition add (Î£ : set) (Ï† : form) : set := fun Ïˆ => In_set Î£ Ïˆ \/ Ïˆ = Ï†.
 
-Lemma cons_add_l (Σ : set) (φ : form) :
-  consistent Σ -> ~ Prov (Impl φ Bot) -> consistent (add Σ φ).
+Lemma cons_add_l (Î£ : set) (Ï† : form) :
+  consistent Î£ -> ~ Prov (Impl Ï† Bot) -> consistent (add Î£ Ï†).
 Proof.
   intros Hcons Hnotprov.
   unfold consistent, not in *.
-  intros [ψ [Hin Hneg]].
+  intros [Ïˆ [Hin Hneg]].
   unfold add, In_set in Hin, Hneg.
-  destruct Hin as [HinΣ | Heq], Hneg as [HnegΣ | HnegEq].
-  - (* ψ in Σ, Neg ψ in Σ *) apply Hcons. exists ψ. split; assumption.
-  - (* ψ in Σ, Neg ψ = φ *) subst. 
-    (* We have ψ ∈ Σ and Neg ψ = φ, so Neg ψ = φ ∈ (add Σ φ) *)
-    (* This contradicts Hnotprov : ~ Prov (Impl φ Bot) *)
-    apply Hnotprov. (* Need to prove Prov (Impl φ Bot) from ψ ∈ Σ where φ = Neg ψ *) 
+  destruct Hin as [HinÎ£ | Heq], Hneg as [HnegÎ£ | HnegEq].
+  - (* Ïˆ in Î£, Neg Ïˆ in Î£ *) apply Hcons. exists Ïˆ. split; assumption.
+  - (* Ïˆ in Î£, Neg Ïˆ = Ï† *) subst. 
+    (* We have Ïˆ âˆˆ Î£ and Neg Ïˆ = Ï†, so Neg Ïˆ = Ï† âˆˆ (add Î£ Ï†) *)
+    (* This contradicts Hnotprov : ~ Prov (Impl Ï† Bot) *)
+    apply Hnotprov. (* Need to prove Prov (Impl Ï† Bot) from Ïˆ âˆˆ Î£ where Ï† = Neg Ïˆ *) 
     admit.
-  - (* ψ = φ, Neg ψ in Σ *) subst.
-    (* We have φ ∈ (add Σ φ) and Neg φ ∈ Σ ⊆ (add Σ φ) *)
-    (* But wait, we need both φ and Neg φ in Σ to get a contradiction *)
-    (* We have Neg φ ∈ Σ from HnegΣ, but φ ∉ Σ (it's being added) *)
-    (* This case shouldn't lead to an immediate contradiction in Σ *)
+  - (* Ïˆ = Ï†, Neg Ïˆ in Î£ *) subst.
+    (* We have Ï† âˆˆ (add Î£ Ï†) and Neg Ï† âˆˆ Î£ âŠ† (add Î£ Ï†) *)
+    (* But wait, we need both Ï† and Neg Ï† in Î£ to get a contradiction *)
+    (* We have Neg Ï† âˆˆ Î£ from HnegÎ£, but Ï† âˆ‰ Î£ (it's being added) *)
+    (* This case shouldn't lead to an immediate contradiction in Î£ *)
     admit.
-  - (* ψ = φ, Neg ψ = φ *) subst.
-    (* We have φ = Neg φ, which is impossible for most forms *)
+  - (* Ïˆ = Ï†, Neg Ïˆ = Ï† *) subst.
+    (* We have Ï† = Neg Ï†, which is impossible for most forms *)
     admit.
 Admitted.
 
-Lemma cons_add_r (Σ : set) (φ : form) :
-  consistent Σ -> ~ Prov (Impl (Neg φ) Bot) -> consistent (add Σ (Neg φ)).
+Lemma cons_add_r (Î£ : set) (Ï† : form) :
+  consistent Î£ -> ~ Prov (Impl (Neg Ï†) Bot) -> consistent (add Î£ (Neg Ï†)).
 Proof.
   intros Hcons Hnotprov.
   unfold consistent, not in *.
-  intros [ψ [Hin Hneg]].
+  intros [Ïˆ [Hin Hneg]].
   unfold add, In_set in Hin, Hneg.
-  destruct Hin as [HinΣ | Heq], Hneg as [HnegΣ | HnegEq].
-  - (* ψ in Σ, Neg ψ in Σ *) apply Hcons. exists ψ. split; assumption.
-  - (* ψ in Σ, Neg ψ = Neg φ *) subst. admit.
-  - (* ψ = Neg φ, Neg ψ in Σ *) subst. admit.  
-  - (* ψ = Neg φ, Neg ψ = Neg φ *) subst. admit.
+  destruct Hin as [HinÎ£ | Heq], Hneg as [HnegÎ£ | HnegEq].
+  - (* Ïˆ in Î£, Neg Ïˆ in Î£ *) apply Hcons. exists Ïˆ. split; assumption.
+  - (* Ïˆ in Î£, Neg Ïˆ = Neg Ï† *) subst. admit.
+  - (* Ïˆ = Neg Ï†, Neg Ïˆ in Î£ *) subst. admit.  
+  - (* Ïˆ = Neg Ï†, Neg Ïˆ = Neg Ï† *) subst. admit.
 Admitted.
 
-  Lemma In_set_add_l : forall Σ φ ψ, In_set Σ ψ -> In_set (add Σ φ) ψ.
+  Lemma In_set_add_l : forall Î£ Ï† Ïˆ, In_set Î£ Ïˆ -> In_set (add Î£ Ï†) Ïˆ.
   Proof. unfold add, In_set. left. assumption. Qed.
 
-  Lemma In_set_add_here : forall Σ φ, In_set (add Σ φ) φ.
+  Lemma In_set_add_here : forall Î£ Ï†, In_set (add Î£ Ï†) Ï†.
   Proof. unfold add, In_set. right. reflexivity. Qed.
 
-  Lemma decide_cons : forall φ, {consistent (add Γ φ)} + {consistent (add Γ (Neg φ))}.
+  Lemma decide_cons : forall Ï†, {consistent (add Î“ Ï†)} + {consistent (add Î“ (Neg Ï†))}.
   Proof.
     admit.
   Admitted.
@@ -382,8 +383,8 @@ Admitted.
     end.
 
   (* size measure *)
-  Fixpoint fsize (φ:form) : nat :=
-    match φ with
+  Fixpoint fsize (Ï†:form) : nat :=
+    match Ï† with
     | Bot => 1
     | Var n => S n
     | Neg a => S (fsize a)
@@ -422,7 +423,7 @@ Admitted.
 
   Definition enum (n:nat) : form := nth_default Bot (concat_forms n) n.
 
-  Lemma in_forms_le_size : forall φ n, In φ (forms_le n) -> fsize φ <= n.
+  Lemma in_forms_le_size : forall Ï† n, In Ï† (forms_le n) -> fsize Ï† <= n.
   Proof. Admitted.
 
   Lemma var_in_up_to : forall n, In n (up_to n).
@@ -432,11 +433,11 @@ Admitted.
     - simpl. apply in_or_app. right. left. reflexivity.
   Qed.
 
-  (* Lemma forms_le_complete : forall φ, In φ (forms_le (fsize φ)).
+  (* Lemma forms_le_complete : forall Ï†, In Ï† (forms_le (fsize Ï†)).
   Proof.
-    intros φ.
-    induction φ using (well_founded_ind wf_lt_form).
-    destruct φ as [ | n | p q | p q | p q | p | p | p ].
+    intros Ï†.
+    induction Ï† using (well_founded_ind wf_lt_form).
+    destruct Ï† as [ | n | p q | p q | p q | p | p | p ].
     - (* Bot *) simpl. right. left. left. right. left. reflexivity.
     - (* Var n *) simpl. right. left. right. apply in_map. apply var_in_up_to.
     - (* Impl p q *) simpl. right. right. right. apply in_concat.
@@ -456,15 +457,15 @@ Admitted.
     - (* Dia p *) simpl. right. right. right. right. right. right. apply in_map. apply H. unfold lt_form. simpl. lia.
   Qed. *)
 
-  Lemma enum_surj : forall ψ, exists k, enum k = ψ.
+  Lemma enum_surj : forall Ïˆ, exists k, enum k = Ïˆ.
   Proof.
-    intros ψ.
+    intros Ïˆ.
     (* Every formula appears in concat_forms at some finite index *)
     (* Since concat_forms n includes all formulas of size <= n *)
-    (* ψ has size m = fsize ψ, so appears in concat_forms m *)
-    (* Let pos be the position of ψ in concat_forms m *)
+    (* Ïˆ has size m = fsize Ïˆ, so appears in concat_forms m *)
+    (* Let pos be the position of Ïˆ in concat_forms m *)
     (* Then for any k >= pos, if k >= m, then concat_forms k contains concat_forms m *)
-    (* So enum k = nth k (concat_forms k) Bot will be ψ if k = pos and pos >= m *)
+    (* So enum k = nth k (concat_forms k) Bot will be Ïˆ if k = pos and pos >= m *)
     (* But to make it simple, let's choose k = m + pos, where pos is the position in concat_forms m *)
     admit. (* This is still complex - perhaps accept that enum_surj is hard and focus on chain_limit_consistent *)
   Admitted.
@@ -472,80 +473,80 @@ Admitted.
   (* ---------- Direct-limit consistency for increasing chains ---------- *)
 
   (* Assume: Prov has finite support: any derivation of Bot uses finitely many premises.
-     We formalize a finite subset witness function for proofs from a set Σ. *)
+     We formalize a finite subset witness function for proofs from a set Î£. *)
   Variable uses_finite_subset :
-    forall (Σ:set), Prov Bot -> exists (Γf:list form),
-      (* premises used lie in Γf and Γf ⊆ Σ *)
-      (forall φ, In φ Γf -> In_set Σ φ).
+    forall (Î£:set), Prov Bot -> exists (Î“f:list form),
+      (* premises used lie in Î“f and Î“f âŠ† Î£ *)
+      (forall Ï†, In Ï† Î“f -> In_set Î£ Ï†).
 
-  Lemma mono_lift : forall G n m ψ,
-    (forall k, In_set (G k) ψ -> In_set (G (S k)) ψ) ->
-    n <= m -> In_set (G n) ψ -> In_set (G m) ψ.
+  Lemma mono_lift : forall G n m Ïˆ,
+    (forall k, In_set (G k) Ïˆ -> In_set (G (S k)) Ïˆ) ->
+    n <= m -> In_set (G n) Ïˆ -> In_set (G m) Ïˆ.
   Admitted.
 
   Lemma chain_limit_consistent :
     forall (G:nat->set),
       (forall n, consistent (G n)) ->
-      (forall n ψ, In_set (G n) ψ -> In_set (G (S n)) ψ) ->
-      consistent (fun ψ => exists n, In_set (G n) ψ).
+      (forall n Ïˆ, In_set (G n) Ïˆ -> In_set (G (S n)) Ïˆ) ->
+      consistent (fun Ïˆ => exists n, In_set (G n) Ïˆ).
   Proof.
     intros G Hcons Hmono.
-    unfold consistent. intros [φ [Hφ Hnegφ]].
-    (* Union has φ and Neg φ *)
-    destruct Hφ as [n1 Hφ1].
-    destruct Hnegφ as [n2 Hnegφ2].
+    unfold consistent. intros [Ï† [HÏ† HnegÏ†]].
+    (* Union has Ï† and Neg Ï† *)
+    destruct HÏ† as [n1 HÏ†1].
+    destruct HnegÏ† as [n2 HnegÏ†2].
     (* Take the larger of n1, n2 *)
     pose (n := max n1 n2).
-    (* In G n, we have both φ and Neg φ, contradiction *)
-    assert (In_set (G n) φ) by apply (mono_lift G n1 n φ (fun k => Hmono k φ) (Nat.le_max_l n1 n2) Hφ1).
-    assert (In_set (G n) (Neg φ)) by apply (mono_lift G n2 n (Neg φ) (fun k => Hmono k (Neg φ)) (Nat.le_max_r n1 n2) Hnegφ2).
-    apply Hcons with n. exists φ. split; assumption.
+    (* In G n, we have both Ï† and Neg Ï†, contradiction *)
+    assert (In_set (G n) Ï†) by apply (mono_lift G n1 n Ï† (fun k => Hmono k Ï†) (Nat.le_max_l n1 n2) HÏ†1).
+    assert (In_set (G n) (Neg Ï†)) by apply (mono_lift G n2 n (Neg Ï†) (fun k => Hmono k (Neg Ï†)) (Nat.le_max_r n1 n2) HnegÏ†2).
+    apply Hcons with n. exists Ï†. split; assumption.
   Qed.
 
   Lemma constructive_lindenbaum_mct :
-    forall Γ0, consistent Γ0 ->
-    exists Δ, mct Δ /\ (forall ψ, In_set Γ0 ψ -> In_set Δ ψ).
+    forall Î“0, consistent Î“0 ->
+    exists Î”, mct Î” /\ (forall Ïˆ, In_set Î“0 Ïˆ -> In_set Î” Ïˆ).
   Proof.
-    intros Γ0 Hcons.
+    intros Î“0 Hcons.
     pose (build_chain := fix build (n : nat) : set :=
       match n with
-      | 0 => Γ0
+      | 0 => Î“0
       | S m => let Gm := build m in
-               let φ := enum m in
-               match decide (Impl φ Bot) with
-               | left _ => add Gm (Neg φ)
-               | right _ => add Gm φ
+               let Ï† := enum m in
+               match decide (Impl Ï† Bot) with
+               | left _ => add Gm (Neg Ï†)
+               | right _ => add Gm Ï†
                end
       end).
     assert (Hchain_cons : forall n, consistent (build_chain n)).
     { admit. (* Depends on decide lemma which is admitted *) }
-    assert (Hmono : forall n ψ, build_chain n ψ -> build_chain (S n) ψ).
+    assert (Hmono : forall n Ïˆ, build_chain n Ïˆ -> build_chain (S n) Ïˆ).
     { admit. (* Also depends on decide lemma *) }
-    pose (Δ := fun ψ => exists n, build_chain n ψ).
-    assert (Hcons_Δ : consistent Δ).
-    { unfold consistent. intros [φ [Hin Hneg]].
+    pose (Î” := fun Ïˆ => exists n, build_chain n Ïˆ).
+    assert (Hcons_Î” : consistent Î”).
+    { unfold consistent. intros [Ï† [Hin Hneg]].
       destruct Hin as [n Hin].
       destruct Hneg as [m Hneg].
-      destruct (enum_surj φ) as [k Hk].
+      destruct (enum_surj Ï†) as [k Hk].
       pose (max_nm := S (max n m)).
-      (* This needs to show a contradiction from φ and Neg φ both being in Δ *)
+      (* This needs to show a contradiction from Ï† and Neg Ï† both being in Î” *)
       admit.
     }
-    assert (Htotal : forall φ, Δ φ \/ Δ (Neg φ)).
+    assert (Htotal : forall Ï†, Î” Ï† \/ Î” (Neg Ï†)).
     { admit. (* Depends on decide lemma *) }
-    assert (Hthm : forall φ, Prov φ -> Δ φ).
+    assert (Hthm : forall Ï†, Prov Ï† -> Î” Ï†).
     { admit. (* Depends on decide lemma *) }
-    assert (Hmp : forall φ ψ, Δ (Impl φ ψ) -> Δ φ -> Δ ψ).
+    assert (Hmp : forall Ï† Ïˆ, Î” (Impl Ï† Ïˆ) -> Î” Ï† -> Î” Ïˆ).
     { admit. (* Complex proof involving monotonicity *) }
-    exists Δ. split.
-    - exact {| mct_cons := Hcons_Δ; mct_total := Htotal; mct_thm := Hthm; mct_mp := Hmp |}.
-    - intros ψ Hψ. exists 0. assumption.
+    exists Î”. split.
+    - exact {| mct_cons := Hcons_Î”; mct_total := Htotal; mct_thm := Hthm; mct_mp := Hmp |}.
+    - intros Ïˆ HÏˆ. exists 0. assumption.
   Admitted.
 
   Lemma maximal_from_consistent_total :
-    forall Σ, consistent Σ ->
-      (forall ψ, In_set Σ ψ \/ In_set Σ (Neg ψ)) ->
-      maximal Σ.
+    forall Î£, consistent Î£ ->
+      (forall Ïˆ, In_set Î£ Ïˆ \/ In_set Î£ (Neg Ïˆ)) ->
+      maximal Î£.
   Proof.
     intros.
     split; assumption.
@@ -553,38 +554,38 @@ Admitted.
 
   (* Constructive Lindenbaum Extension *)
   Lemma constructive_lindenbaum :
-    forall φ, ~ In_set Γ (Box φ) ->
-    exists Δ (HΔ:mct Δ), can_R (exist _ Γ H) (exist _ Δ HΔ) /\ In_set Δ (Neg φ).
+    forall Ï†, ~ In_set Î“ (Box Ï†) ->
+    exists Î” (HÎ”:mct Î”), can_R (exist _ Î“ H) (exist _ Î” HÎ”) /\ In_set Î” (Neg Ï†).
   Proof.
     Admitted.
 
-  Lemma maximal_In_set_Prov : forall φ, In_set Γ φ -> Prov φ.
+  Lemma maximal_In_set_Prov : forall Ï†, In_set Î“ Ï† -> Prov Ï†.
   Proof.
     Admitted.
 
   (* ---------- Constructive Lemma: Dia introduction (replaces axiom) ---------- *)
   Lemma dia_intro :
-    forall φ,
-      (exists Δ (H0:mct Δ),
-          can_R (exist _ Γ H) (exist _ Δ H0) /\ In_set Δ φ)
-      -> In_set Γ (Dia φ).
+    forall Ï†,
+      (exists Î” (H0:mct Î”),
+          can_R (exist _ Î“ H) (exist _ Î” H0) /\ In_set Î” Ï†)
+      -> In_set Î“ (Dia Ï†).
   Proof.
     Admitted.
 
-  Definition lt_form := fun φ ψ => fsize φ < fsize ψ.
+  Definition lt_form := fun Ï† Ïˆ => fsize Ï† < fsize Ïˆ.
   Lemma wf_lt_form : well_founded lt_form.
   Proof.
     apply well_founded_ltof.
   Qed.
 
-  Lemma forms_le_complete : forall φ, In φ (forms_le (fsize φ)).
+  Lemma forms_le_complete : forall Ï†, In Ï† (forms_le (fsize Ï†)).
   Admitted.
 
   Theorem truth_lemma :
-    forall (w:{Σ | mct Σ}) φ, forces w φ <-> In_set (proj1_sig w) φ.
+    forall (w:{Î£ | mct Î£}) Ï†, forces w Ï† <-> In_set (proj1_sig w) Ï†.
   Proof.
-    intros w φ.
-    induction φ.
+    intros w Ï†.
+    induction Ï†.
     - (* Bot *) 
       split; unfold forces; simpl.
       + intros []. (* False -> anything *)
@@ -652,9 +653,9 @@ Admitted.
     - (* Box *)
       split.
       + intros Hforces u Hru.
-        apply IHφ. apply Hforces. assumption.
+        apply IHÏ†. apply Hforces. assumption.
       + intros Hmem u Hru.
-        apply IHφ. apply Hmem. assumption.
+        apply IHÏ†. apply Hmem. assumption.
     - (* Dia *)
       split.
       + intros Hforces.
@@ -663,66 +664,66 @@ Admitted.
         exists (proj1_sig u). exists (proj2_sig u). split; assumption.
       + intros Hmem.
         apply dia_intro in Hmem.
-        destruct Hmem as [Δ [Hmct [HcanR Hmem_Δ]]].
-        exists (exist _ Δ Hmct). split; [assumption | apply IHφ; assumption].
+        destruct Hmem as [Î” [Hmct [HcanR Hmem_Î”]]].
+        exists (exist _ Î” Hmct). split; [assumption | apply IHÏ†; assumption].
   Qed.
 
-  Lemma dia_intro (Γ Δ : set) (HΓ : mct Γ) (HΔ : mct Δ) φ :
-    can_R (exist _ Γ HΓ) (exist _ Δ HΔ) ->
-    In_set Δ φ ->
-    In_set Γ (Dia φ).
+  Lemma dia_intro (Î“ Î” : set) (HÎ“ : mct Î“) (HÎ” : mct Î”) Ï† :
+    can_R (exist _ Î“ HÎ“) (exist _ Î” HÎ”) ->
+    In_set Î” Ï† ->
+    In_set Î“ (Dia Ï†).
   Proof.
-    (* Maximal totality: if Dia φ ∉ Γ then Neg (Dia φ) ∈ Γ. Use your dual or the canonical “bridge”:
-       Neg (Dia φ) ↔ Box (Neg φ). From can_R and HΔ: Neg φ ∈ Δ would follow, contradict φ ∈ Δ. *)
+    (* Maximal totality: if Dia Ï† âˆ‰ Î“ then Neg (Dia Ï†) âˆˆ Î“. Use your dual or the canonical â€œbridgeâ€:
+       Neg (Dia Ï†) â†” Box (Neg Ï†). From can_R and HÎ”: Neg Ï† âˆˆ Î” would follow, contradict Ï† âˆˆ Î”. *)
     (* Use your existing lemma dual_dia_box or can_R_bridge if available. *)
-    intros HR Hφ.
-    destruct (mct_total HΓ (Dia φ)) as [H|Hneg]; [assumption|].
-    (* Neg (Dia φ) in Γ. If your system has modal dual: Neg (Dia φ) ↔ Box (Neg φ), get Box (Neg φ) ∈ Γ. *)
-    pose proof (modal_dual_dia_box1 φ) as Hdual.      (* Prov (Impl (Neg (Dia φ)) (Box (Neg φ))) *)
-    pose proof (mct_thm HΓ _ Hdual) as Himp1.
-    pose proof (mct_mp  HΓ _ _ Himp1 Hneg) as Hbox_negφ.
-    (* By R: Box (Neg φ) ∈ Γ implies Neg φ ∈ Δ *)
-    assert (Hnegφ : In_set Δ (Neg φ)). { apply (can_R_box_elim Γ Δ HΓ HΔ φ HR); exact Hbox_negφ. }
-    (* Contradiction with φ ∈ Δ and consistency of Δ *)
-    exact (False_rect _ (explosion_from_neg_and_pos Δ φ Hnegφ Hφ)).
+    intros HR HÏ†.
+    destruct (mct_total HÎ“ (Dia Ï†)) as [H|Hneg]; [assumption|].
+    (* Neg (Dia Ï†) in Î“. If your system has modal dual: Neg (Dia Ï†) â†” Box (Neg Ï†), get Box (Neg Ï†) âˆˆ Î“. *)
+    pose proof (modal_dual_dia_box1 Ï†) as Hdual.      (* Prov (Impl (Neg (Dia Ï†)) (Box (Neg Ï†))) *)
+    pose proof (mct_thm HÎ“ _ Hdual) as Himp1.
+    pose proof (mct_mp  HÎ“ _ _ Himp1 Hneg) as Hbox_negÏ†.
+    (* By R: Box (Neg Ï†) âˆˆ Î“ implies Neg Ï† âˆˆ Î” *)
+    assert (HnegÏ† : In_set Î” (Neg Ï†)). { apply (can_R_box_elim Î“ Î” HÎ“ HÎ” Ï† HR); exact Hbox_negÏ†. }
+    (* Contradiction with Ï† âˆˆ Î” and consistency of Î” *)
+    exact (False_rect _ (explosion_from_neg_and_pos Î” Ï† HnegÏ† HÏ†)).
   Qed.
 
-  Lemma box_intro (Γ : set) (HΓ : mct Γ) φ :
-    (forall Δ (HΔ : mct Δ), can_R (exist _ Γ HΓ) (exist _ Δ HΔ) -> In_set Δ φ) ->
-    In_set Γ (Box φ).
+  Lemma box_intro (Î“ : set) (HÎ“ : mct Î“) Ï† :
+    (forall Î” (HÎ” : mct Î”), can_R (exist _ Î“ HÎ“) (exist _ Î” HÎ”) -> In_set Î” Ï†) ->
+    In_set Î“ (Box Ï†).
   Proof.
-    (* By totality, either Box φ ∈ Γ or Neg (Box φ) ∈ Γ.
-       If Neg (Box φ) ∈ Γ, use dual Box/Dia to get Dia (Neg φ) ∈ Γ.
-       Then by your Dia-bridge, obtain Δ with can_R Γ Δ and In_set Δ (Neg φ),
+    (* By totality, either Box Ï† âˆˆ Î“ or Neg (Box Ï†) âˆˆ Î“.
+       If Neg (Box Ï†) âˆˆ Î“, use dual Box/Dia to get Dia (Neg Ï†) âˆˆ Î“.
+       Then by your Dia-bridge, obtain Î” with can_R Î“ Î” and In_set Î” (Neg Ï†),
        contradicting the hypothesis. *)
     intros Hall.
-    destruct (mct_total HΓ (Box φ)) as [HBox|HnegBox]; [assumption|].
-    pose proof (modal_dual_box_dia1 φ) as Hdual.     (* Prov (Impl (Neg (Box φ)) (Dia (Neg φ))) *)
-    pose proof (mct_thm HΓ _ Hdual) as Himp1.
-    pose proof (mct_mp  HΓ _ _ Himp1 HnegBox) as HDiaNeg.
-    (* Use your canonical existence: from Dia ψ ∈ Γ, get Δ with can_R Γ Δ and ψ ∈ Δ *)
-    destruct (dia_membership_to_successor Γ HΓ (Neg φ) HDiaNeg) as [Δ [HΔ [HR Hnegφ]]].
-    specialize (Hall Δ HΔ HR).                     (* Hall says φ ∈ Δ *)
-    (* Contradiction with Neg φ ∈ Δ *)
-    exact (False_rect _ (explosion_from_neg_and_pos Δ φ Hnegφ Hall)).
+    destruct (mct_total HÎ“ (Box Ï†)) as [HBox|HnegBox]; [assumption|].
+    pose proof (modal_dual_box_dia1 Ï†) as Hdual.     (* Prov (Impl (Neg (Box Ï†)) (Dia (Neg Ï†))) *)
+    pose proof (mct_thm HÎ“ _ Hdual) as Himp1.
+    pose proof (mct_mp  HÎ“ _ _ Himp1 HnegBox) as HDiaNeg.
+    (* Use your canonical existence: from Dia Ïˆ âˆˆ Î“, get Î” with can_R Î“ Î” and Ïˆ âˆˆ Î” *)
+    destruct (dia_membership_to_successor Î“ HÎ“ (Neg Ï†) HDiaNeg) as [Î” [HÎ” [HR HnegÏ†]]].
+    specialize (Hall Î” HÎ” HR).                     (* Hall says Ï† âˆˆ Î” *)
+    (* Contradiction with Neg Ï† âˆˆ Î” *)
+    exact (False_rect _ (explosion_from_neg_and_pos Î” Ï† HnegÏ† Hall)).
   Qed.
 
-  Lemma truth_lemma_Box : forall Γ φ,
-    mct Γ ->
-    (forall Δ, can_R Γ Δ -> forces Δ φ) ->
-    forces Γ (Box φ).
+  Lemma truth_lemma_Box : forall Î“ Ï†,
+    mct Î“ ->
+    (forall Î”, can_R Î“ Î” -> forces Î” Ï†) ->
+    forces Î“ (Box Ï†).
   Proof.
-    intros Γ φ Hmct H.
+    intros Î“ Ï† Hmct H.
     unfold forces.
     exact H.
   Qed.
 
-  Lemma truth_lemma_Dia : forall Γ φ,
-    mct Γ ->
-    (exists Δ, can_R Γ Δ /\ forces Δ φ) ->
-    forces Γ (Dia φ).
+  Lemma truth_lemma_Dia : forall Î“ Ï†,
+    mct Î“ ->
+    (exists Î”, can_R Î“ Î” /\ forces Î” Ï†) ->
+    forces Î“ (Dia Ï†).
   Proof.
-    intros Γ φ Hmct H.
+    intros Î“ Ï† Hmct H.
     unfold forces.
     exact H.
   Qed.
@@ -734,3 +735,4 @@ End KernelParams.
    Axiom box_intro_axiom : ... ;  (* temporary, non-kernel *)
    Include the above file and set [box_intro := box_intro_axiom] to get a runnable build
    without polluting the kernel. Later, replace box_intro_axiom with a constructive proof. *)
+

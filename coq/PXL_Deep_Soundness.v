@@ -1,9 +1,10 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 From Coq Require Import Logic.Classical.
 
 (*
   PXL_Deep_Soundness.v
   Deep embedding of a propositional modal language with S5 rules.
-  Proves: If Prov φ then φ is valid on any frame with equivalence R.
+  Proves: If Prov Ï† then Ï† is valid on any frame with equivalence R.
   Explicit proofs only.
 *)
 
@@ -31,8 +32,8 @@ Record frame := {
 
 Definition valuation (F:frame) := nat -> (W F) -> Prop.
 
-Fixpoint eval (F:frame) (v:valuation F) (w:W F) (φ:form) {struct φ} : Prop :=
-  match φ with
+Fixpoint eval (F:frame) (v:valuation F) (w:W F) (Ï†:form) {struct Ï†} : Prop :=
+  match Ï† with
   | Bot      => False
   | Var n    => v n w
   | Impl p q => eval F v w p -> eval F v w q
@@ -43,8 +44,8 @@ Fixpoint eval (F:frame) (v:valuation F) (w:W F) (φ:form) {struct φ} : Prop :=
   | Dia p    => exists u, R F w u /\ eval F v u p
   end.
 
-Definition valid_on (F:frame) (φ:form) : Prop :=
-  forall (v:valuation F) (w:W F), eval F v w φ.
+Definition valid_on (F:frame) (Ï†:form) : Prop :=
+  forall (v:valuation F) (w:W F), eval F v w Ï†.
 
 (* Proof system *)
 Inductive Prov : form -> Prop :=
@@ -117,8 +118,8 @@ Proof.
   intros F p H v w u Hwu. apply (H v u).
 Qed.
 
-Fixpoint soundness (F:frame) (φ:form) (H:Prov φ) : valid_on F φ :=
-  match H in Prov φ return valid_on F φ with
+Fixpoint soundness (F:frame) (Ï†:form) (H:Prov Ï†) : valid_on F Ï† :=
+  match H in Prov Ï† return valid_on F Ï† with
   | ax_K p q => fun v w => sound_K F v w p q
   | ax_T p => fun v w => sound_T F v w p
   | ax_4 p => fun v w => sound_4 F v w p
@@ -131,3 +132,4 @@ Fixpoint soundness (F:frame) (φ:form) (H:Prov φ) : valid_on F φ :=
   end.
 
 End Deep.
+

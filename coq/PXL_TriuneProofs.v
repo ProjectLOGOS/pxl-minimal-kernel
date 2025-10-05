@@ -1,3 +1,4 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 From PXLs Require Import PXLv3 S5_Kripke PXL_Decidability PXL_TriuneTheory.
 
 (** Triune Proofs: Proving the target formulas via PXL semantics **)
@@ -32,3 +33,4 @@ Theorem Gamma_Triune_max_consistent : max_consistent Gamma_Triune.
 (** Theorem: Gamma_Triune has a canonical model **)
 Theorem Gamma_Triune_canonical_model : exists M w, canonical_model M /\ forces M w Tri_Necessary /\ forces M w Tri_Unity /\ forces M w Tri_Distinct /\ forces M w Grounds_ID /\ forces M w Grounds_NC /\ forces M w Grounds_EM /\ forces M w Privation_is_Absence.
   Admitted.
+

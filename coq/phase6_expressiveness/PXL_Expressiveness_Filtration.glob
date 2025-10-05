@@ -1,0 +1,83 @@
+DIGEST 1f74f1ad7a467fd5f8f230f07ae2d34f
+FPXLs.phase6_expressiveness.PXL_Expressiveness_Filtration
+R62:65 Coq.Lists.List <> <> lib
+R75:87 Coq.Lists.List ListNotations <> mod
+R115:134 PXLs.PXL_Canonical_Kernel <> <> lib
+R136:153 PXLs.PXL_Deep_Soundness <> <> lib
+R155:159 PXLs.PXLv3 <> <> lib
+ax 173:177 <> model
+ax 197:202 <> forces
+R211:214 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R206:210 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> model defax
+R219:222 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R215:218 PXLs.PXLv3 <> form ind
+def 239:241 <> sub
+R247:250 PXLs.PXLv3 <> form ind
+binder 244:245 <> φ:5
+R255:258 Coq.Init.Datatypes <> list ind
+R260:263 PXLs.PXLv3 <> form ind
+R276:277 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+R288:291 PXLs.PXLv3 <> Conj constr
+R299:302 PXLs.PXLv3 <> Disj constr
+R310:313 PXLs.PXLv3 <> Impl constr
+R324:327 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R322:323 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+R333:336 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R328:330 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R337:339 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R324:327 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R322:323 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+R333:336 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R328:330 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R337:339 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R324:327 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R322:323 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+R333:336 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R328:330 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R337:339 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R347:349 PXLs.PXLv3 <> Neg constr
+R355:357 PXLs.PXLv3 <> Box constr
+R363:365 PXLs.PXLv3 <> Dia constr
+R383:386 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R381:382 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+R387:389 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R383:386 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R381:382 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+R387:389 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R383:386 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R381:382 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+R387:389 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> sub:6 def
+R431:431 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R434:434 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R432:433 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:5 var
+def 454:461 <> filtered
+R466:470 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> model defax
+binder 464:464 <> M:8
+R477:480 PXLs.PXLv3 <> form ind
+binder 474:475 <> φ:9
+R487:491 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> model defax
+binder 484:485 <> M':10
+R504:507 Coq.Init.Logic <> True ind
+prf 519:528 <> filtration
+binder 539:539 <> M:11
+binder 541:542 <> φ:12
+R545:551 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R554:555 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 552:553 <> M':13
+R556:563 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> filtered def
+R565:565 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> M:11 var
+R567:568 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:12 var
+R570:571 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> M':13 var
+prf 856:858 <> fmp
+binder 869:870 <> φ:14
+R882:885 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R873:874 Coq.Init.Logic <> ::type_scope:'~'_x not
+R875:878 PXLs.PXLv3 <> Prov ind
+R880:881 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:14 var
+R886:892 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R894:895 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 893:893 <> M:15
+R896:897 Coq.Init.Logic <> ::type_scope:'~'_x not
+R898:903 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> forces defax
+R905:905 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> M:15 var
+R907:908 PXLs.phase6_expressiveness.PXL_Expressiveness_Filtration <> φ:14 var

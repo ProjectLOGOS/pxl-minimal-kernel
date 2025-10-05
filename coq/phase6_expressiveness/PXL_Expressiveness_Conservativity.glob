@@ -1,0 +1,48 @@
+DIGEST 8ad90527284c63c2afaac92b2eab9b52
+FPXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity
+R67:71 PXLs.PXLv3 <> <> lib
+R97:100 PXLs.PXLv3 <> Conj constr
+R114:117 PXLs.PXLv3 <> Impl constr
+R103:106 PXLs.PXLv3 <> Impl constr
+not 83:83 <> :::x_'⩪'_x
+def 150:165 <> eliminate_macros
+R171:174 PXLs.PXLv3 <> form ind
+binder 168:169 <> φ:1
+R179:182 PXLs.PXLv3 <> form ind
+R195:196 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> φ:1 var
+R207:210 PXLs.PXLv3 <> Conj constr
+R219:221 PXLs.PXLv3 <> Neg constr
+R224:227 PXLs.PXLv3 <> Impl constr
+R251:253 PXLs.PXLv3 <> Neg constr
+R256:271 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R230:245 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R282:285 PXLs.PXLv3 <> Disj constr
+R294:297 PXLs.PXLv3 <> Impl constr
+R327:342 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R300:302 PXLs.PXLv3 <> Neg constr
+R305:320 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R351:353 PXLs.PXLv3 <> Dia constr
+R362:364 PXLs.PXLv3 <> Neg constr
+R367:369 PXLs.PXLv3 <> Box constr
+R372:374 PXLs.PXLv3 <> Neg constr
+R377:392 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R403:405 PXLs.PXLv3 <> Neg constr
+R414:416 PXLs.PXLv3 <> Neg constr
+R419:434 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R443:446 PXLs.PXLv3 <> Impl constr
+R454:457 PXLs.PXLv3 <> Impl constr
+R481:496 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R460:475 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+R505:507 PXLs.PXLv3 <> Box constr
+R516:518 PXLs.PXLv3 <> Box constr
+R521:536 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros:2 def
+prf 574:593 <> macro_elim_roundtrip
+binder 604:605 <> φ:4
+R608:611 PXLs.PXLv3 <> Prov ind
+R633:637 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> :::x_'⩪'_x not
+R614:629 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros def
+R631:632 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> φ:4 var
+R638:639 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> φ:4 var
+R638:639 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> φ:4 var
+R614:629 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> eliminate_macros def
+R631:632 PXLs.phase6_expressiveness.PXL_Expressiveness_Conservativity <> φ:4 var

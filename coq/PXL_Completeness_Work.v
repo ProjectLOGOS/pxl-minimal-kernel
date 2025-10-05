@@ -1,98 +1,99 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 From PXLs Require Import PXL_Canonical_Kernel.
 
 (* Admitted parts for constructive completeness *)
 
 Parameter enum : nat -> form.
 
-Axiom enum_complete : forall φ, exists n, enum n = φ.
+Axiom enum_complete : forall Ï†, exists n, enum n = Ï†.
 
-Parameter dec_cons : forall (Σ:set form), { ~ Prov Σ Bot } + { Prov Σ Bot }.
+Parameter dec_cons : forall (Î£:set form), { ~ Prov Î£ Bot } + { Prov Î£ Bot }.
 
-Definition step (Σ : set form) (n : nat) : set form :=
-  let ψ := enum n in
-  match dec_cons (fun φ => Σ φ \/ φ = ψ) with
-  | left _  => fun φ => Σ φ \/ φ = ψ
-  | right _ => fun φ => Σ φ \/ φ = Neg ψ
+Definition step (Î£ : set form) (n : nat) : set form :=
+  let Ïˆ := enum n in
+  match dec_cons (fun Ï† => Î£ Ï† \/ Ï† = Ïˆ) with
+  | left _  => fun Ï† => Î£ Ï† \/ Ï† = Ïˆ
+  | right _ => fun Ï† => Î£ Ï† \/ Ï† = Neg Ïˆ
   end.
 
-Fixpoint extend (n:nat) (Σ:set form) : set form :=
-  match n with 0 => step Σ 0 | S k => step (extend k Σ) (S k) end.
+Fixpoint extend (n:nat) (Î£:set form) : set form :=
+  match n with 0 => step Î£ 0 | S k => step (extend k Î£) (S k) end.
 
-Definition Δ∞ := fun φ => exists n, In_set (extend n (fun _ => False)) φ.
+Definition Î”âˆž := fun Ï† => exists n, In_set (extend n (fun _ => False)) Ï†.
 
-Lemma lindenbaum_constructive : maximal Δ∞ /\ consistent Δ∞.
+Lemma lindenbaum_constructive : maximal Î”âˆž /\ consistent Î”âˆž.
 Admitted.
 
-Lemma weakening Γ Δ χ : incl Γ Δ -> Prov Γ χ -> Prov Δ χ.
+Lemma weakening Î“ Î” Ï‡ : incl Î“ Î” -> Prov Î“ Ï‡ -> Prov Î” Ï‡.
 Admitted.
 
-Lemma deduction Γ ψ χ : Prov (cons Γ ψ) χ -> Prov Γ (Impl ψ χ).
+Lemma deduction Î“ Ïˆ Ï‡ : Prov (cons Î“ Ïˆ) Ï‡ -> Prov Î“ (Impl Ïˆ Ï‡).
 Admitted.
 
-Definition consistent Γ := ~ Prov Γ Bot.
+Definition consistent Î“ := ~ Prov Î“ Bot.
 
-Lemma cons_add_l Γ φ :
-  consistent Γ -> ~ Prov Γ φ -> consistent (cons Γ φ).
+Lemma cons_add_l Î“ Ï† :
+  consistent Î“ -> ~ Prov Î“ Ï† -> consistent (cons Î“ Ï†).
 Proof.
   intros Hc Hn Habs.
-  pose proof (deduction Γ φ Bot Habs) as Himpl.
+  pose proof (deduction Î“ Ï† Bot Habs) as Himpl.
   exact Hn.
 Qed.
 
-Lemma cons_add_r Γ φ :
-  consistent Γ -> ~ Prov Γ (Neg φ) -> consistent (cons Γ (Neg φ)).
+Lemma cons_add_r Î“ Ï† :
+  consistent Î“ -> ~ Prov Î“ (Neg Ï†) -> consistent (cons Î“ (Neg Ï†)).
 Proof.
   intros Hc Hn Habs.
-  pose proof (deduction Γ (Neg φ) Bot Habs) as Himpl.
+  pose proof (deduction Î“ (Neg Ï†) Bot Habs) as Himpl.
   exact Hn.
 Qed.
 
-Definition base_succ (Δ:set form) (φ:form) : set form :=
-  fun ψ => ψ = φ \/ In_set Δ (Box ψ).
+Definition base_succ (Î”:set form) (Ï†:form) : set form :=
+  fun Ïˆ => Ïˆ = Ï† \/ In_set Î” (Box Ïˆ).
 
-Lemma base_succ_preserves_R Δ φ :
-  forall ψ, In_set Δ (Box ψ) -> base_succ Δ φ ψ.
+Lemma base_succ_preserves_R Î” Ï† :
+  forall Ïˆ, In_set Î” (Box Ïˆ) -> base_succ Î” Ï† Ïˆ.
 Proof. firstorder. Qed.
 
-Lemma base_succ_consistent Δ φ :
-  maximal Δ ->
-  In_set Δ (Dia φ) ->
-  consistent (of_set (base_succ Δ φ)).
+Lemma base_succ_consistent Î” Ï† :
+  maximal Î” ->
+  In_set Î” (Dia Ï†) ->
+  consistent (of_set (base_succ Î” Ï†)).
 Admitted.
 
 Lemma extend_preserving (S0:set form) :
   consistent (of_set S0) ->
-  exists Γ, maximal Γ /\ (forall ψ, S0 ψ -> In_set Γ ψ).
+  exists Î“, maximal Î“ /\ (forall Ïˆ, S0 Ïˆ -> In_set Î“ Ïˆ).
 Admitted.
 
-Lemma dia_membership_to_successor_constr Δ φ :
-  maximal Δ ->
-  In_set Δ (Dia φ) ->
-  exists Γ, maximal Γ /\ R_can Δ Γ /\ In_set Γ φ.
+Lemma dia_membership_to_successor_constr Î” Ï† :
+  maximal Î” ->
+  In_set Î” (Dia Ï†) ->
+  exists Î“, maximal Î“ /\ R_can Î” Î“ /\ In_set Î“ Ï†.
 Proof.
   intros Hmax Hdia.
-  have Hcons : consistent (of_set (base_succ Δ φ))
+  have Hcons : consistent (of_set (base_succ Î” Ï†))
     by apply base_succ_consistent; auto.
-  destruct (extend_preserving (base_succ Δ φ) Hcons) as [Γ [HmaxΓ Hpres]].
-  exists Γ; repeat split.
-  - intros ψ HBox. apply Hpres, base_succ_preserves_R; exact HBox.
+  destruct (extend_preserving (base_succ Î” Ï†) Hcons) as [Î“ [HmaxÎ“ Hpres]].
+  exists Î“; repeat split.
+  - intros Ïˆ HBox. apply Hpres, base_succ_preserves_R; exact HBox.
   - apply Hpres; firstorder.
 Qed.
 
-Lemma dia_membership_to_successor Γ (HΓ:mct Γ) φ :
-  In_set Γ (Dia φ) ->
-  {Δ : set & {HΔ : mct Δ & { HR : can_R (exist _ Γ HΓ) (exist _ Δ HΔ)
-                              & In_set Δ φ }}}.
+Lemma dia_membership_to_successor Î“ (HÎ“:mct Î“) Ï† :
+  In_set Î“ (Dia Ï†) ->
+  {Î” : set & {HÎ” : mct Î” & { HR : can_R (exist _ Î“ HÎ“) (exist _ Î” HÎ”)
+                              & In_set Î” Ï† }}}.
 Proof.
   intros Hdia.
-  destruct (dia_membership_to_successor_constr Γ φ HΓ Hdia) as [Δ [HmaxΔ [HR Hφ]]].
-  exists Δ. exists HmaxΔ. exists HR. exact Hφ.
+  destruct (dia_membership_to_successor_constr Î“ Ï† HÎ“ Hdia) as [Î” [HmaxÎ” [HR HÏ†]]].
+  exists Î”. exists HmaxÎ”. exists HR. exact HÏ†.
 Qed.
 
 (* Truth lemma with completeness *)
 
 Theorem truth_lemma :
-  forall (w:world) (φ : form), forces w φ <-> In_set (proj1_sig w) φ.
+  forall (w:world) (Ï† : form), forces w Ï† <-> In_set (proj1_sig w) Ï†.
 Proof.
   (* Propositional cases proven in kernel, modal cases use constructive machinery *)
   Admitted.

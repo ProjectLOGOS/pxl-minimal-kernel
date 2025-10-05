@@ -9,3 +9,13 @@ coq/PXL_Completeness_Instance.v
 coq/PXL_TriuneTheory.v
 
 coq/PXL_TriuneNecessity.v
+
+coq/phase6_expressiveness/PXL_Expressiveness_Boolean.v
+coq/phase6_expressiveness/PXL_Expressiveness_NormalForms.v
+coq/phase6_expressiveness/PXL_Expressiveness_ModalDuals.v
+coq/phase6_expressiveness/PXL_Expressiveness_Filtration.v
+coq/phase6_expressiveness/PXL_Expressiveness_Intertranslation.v
+
+coq/phase6_expressiveness/PXL_Expressiveness_ClassicalOverlay.v
+
+coq/Kernel_API.v

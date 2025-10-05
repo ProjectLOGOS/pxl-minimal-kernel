@@ -1,4 +1,5 @@
-﻿name: coq-build
+﻿# SPDX-License-Identifier: Apache-2.0
+name: coq-build
 on: [push, pull_request]
 jobs:
   build:
@@ -18,3 +19,4 @@ jobs:
           find coq -name '*.v' -print0 | sort -z | xargs -0 -n1 coqc -q -Q coq PXLs
       - name: Kernel check
         run: coqchk -R coq PXLs
+

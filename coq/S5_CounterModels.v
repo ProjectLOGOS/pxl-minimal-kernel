@@ -1,3 +1,4 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 From Coq Require Import Logic.Classical.
 
 (* Small, self-contained countermodel file showing failures of 4 and 5.
@@ -5,7 +6,7 @@ From Coq Require Import Logic.Classical.
    local `model` and `satisfies` semantics so it doesn't depend on
    the rest of the packet. *)
 
-Inductive form := atom (n: nat) | box (φ: form) | dia (φ: form).
+Inductive form := atom (n: nat) | box (Ï†: form) | dia (Ï†: form).
 
 Record model := {
   world : Type;
@@ -14,11 +15,11 @@ Record model := {
   V : world -> nat -> Prop
 }.
 
-Fixpoint satisfies (M: model) (w: world M) (φ: form) : Prop :=
-  match φ with
+Fixpoint satisfies (M: model) (w: world M) (Ï†: form) : Prop :=
+  match Ï† with
   | atom n => V M w n
-  | box ψ => forall u, R M w u -> satisfies M u ψ
-  | dia ψ => exists u, R M w u /\ satisfies M u ψ
+  | box Ïˆ => forall u, R M w u -> satisfies M u Ïˆ
+  | dia Ïˆ => exists u, R M w u /\ satisfies M u Ïˆ
   end.
 
 Section CounterModels.
@@ -87,3 +88,4 @@ Proof.
 Qed.
 
 End CounterModels.
+

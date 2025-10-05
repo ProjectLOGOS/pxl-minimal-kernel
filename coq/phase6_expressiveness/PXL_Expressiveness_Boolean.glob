@@ -1,0 +1,192 @@
+DIGEST 86563c5287007839dc2082c87f6092f4
+FPXLs.phase6_expressiveness.PXL_Expressiveness_Boolean
+R60:64 PXLs.PXLv3 <> <> lib
+R66:76 PXLs.Assumptions <> <> lib
+sec 88:98 <> BooleanDefs
+var 113:114 BooleanDefs φ
+var 116:117 BooleanDefs ψ
+var 119:119 BooleanDefs r
+R123:126 PXLs.PXLv3 <> form ind
+R154:157 PXLs.PXLv3 <> Conj constr
+R171:174 PXLs.PXLv3 <> Impl constr
+R160:163 PXLs.PXLv3 <> Impl constr
+not 140:140 BooleanDefs :::x_'⩪'_x
+def 211:213 <> Top
+R218:221 PXLs.PXLv3 <> form ind
+R226:229 PXLs.PXLv3 <> Impl constr
+R235:238 PXLs.PXLv3 <> Impl constr
+R243:244 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R240:241 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R231:232 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+def 261:263 <> Bot
+R268:271 PXLs.PXLv3 <> form ind
+R276:278 PXLs.PXLv3 <> Neg constr
+R280:282 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> Top def
+def 298:301 <> AndC
+R310:313 PXLs.PXLv3 <> form ind
+binder 304:305 <> φ:7
+binder 307:308 <> ψ:8
+R318:321 PXLs.PXLv3 <> form ind
+R326:329 PXLs.PXLv3 <> Conj constr
+R334:335 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> ψ:8 var
+R331:332 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> φ:7 var
+def 351:353 <> OrC
+R363:366 PXLs.PXLv3 <> form ind
+binder 357:358 <> φ:9
+binder 360:361 <> ψ:10
+R371:374 PXLs.PXLv3 <> form ind
+R379:382 PXLs.PXLv3 <> Disj constr
+R387:388 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> ψ:10 var
+R384:385 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> φ:9 var
+R447:448 PXLs.PXLv3 <> mp constr
+prf 481:488 <> top_taut
+R492:495 PXLs.PXLv3 <> Prov ind
+R497:499 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> Top def
+R609:615 PXLs.PXLv3 <> ax_PL_k constr
+R620:621 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R617:618 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R609:615 PXLs.PXLv3 <> ax_PL_k constr
+R620:621 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R617:618 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+prf 641:650 <> andc_intro
+R654:657 PXLs.PXLv3 <> Prov ind
+R660:663 PXLs.PXLv3 <> Impl constr
+R669:672 PXLs.PXLv3 <> Impl constr
+R678:681 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> AndC def
+R683:684 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R686:687 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R674:675 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R665:666 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R709:723 PXLs.PXLv3 <> ax_PL_and_intro constr
+R728:729 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R725:726 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R709:723 PXLs.PXLv3 <> ax_PL_and_intro constr
+R728:729 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R725:726 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+prf 747:757 <> andc_elim_l
+R761:764 PXLs.PXLv3 <> Prov ind
+R767:770 PXLs.PXLv3 <> Impl constr
+R785:786 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R773:776 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> AndC def
+R778:779 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R781:782 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R806:815 PXLs.PXLv3 <> ax_PL_and1 constr
+R820:821 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R817:818 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R806:815 PXLs.PXLv3 <> ax_PL_and1 constr
+R820:821 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R817:818 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+prf 839:849 <> andc_elim_r
+R853:856 PXLs.PXLv3 <> Prov ind
+R859:862 PXLs.PXLv3 <> Impl constr
+R877:878 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R865:868 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> AndC def
+R870:871 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R873:874 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R898:907 PXLs.PXLv3 <> ax_PL_and2 constr
+R912:913 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R909:910 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R898:907 PXLs.PXLv3 <> ax_PL_and2 constr
+R912:913 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R909:910 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+prf 931:940 <> or_intro_l
+R944:947 PXLs.PXLv3 <> Prov ind
+R950:953 PXLs.PXLv3 <> Impl constr
+R959:961 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> OrC def
+R963:964 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R966:967 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R955:956 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R992:1001 PXLs.PXLv3 <> ax_PL_orI1 constr
+R1006:1007 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1003:1004 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R992:1001 PXLs.PXLv3 <> ax_PL_orI1 constr
+R1006:1007 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1003:1004 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+prf 1027:1033 <> or_elim
+R1037:1040 PXLs.PXLv3 <> Prov ind
+R1043:1046 PXLs.PXLv3 <> Impl constr
+R1061:1064 PXLs.PXLv3 <> Impl constr
+R1079:1082 PXLs.PXLv3 <> Impl constr
+R1096:1096 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1085:1088 PXLs.PXLv3 <> Impl constr
+R1093:1093 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1090:1091 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1067:1070 PXLs.PXLv3 <> Impl constr
+R1075:1075 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1072:1073 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1049:1051 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> OrC def
+R1053:1054 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1056:1057 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1125:1128 PXLs.PXLv3 <> Impl constr
+R1133:1133 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1130:1131 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1125:1128 PXLs.PXLv3 <> Impl constr
+R1133:1133 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1130:1131 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1151:1154 PXLs.PXLv3 <> Impl constr
+R1159:1159 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1156:1157 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1151:1154 PXLs.PXLv3 <> Impl constr
+R1159:1159 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1156:1157 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1177:1180 PXLs.PXLv3 <> Disj constr
+R1185:1186 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1182:1183 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1177:1180 PXLs.PXLv3 <> Disj constr
+R1185:1186 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1182:1183 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1242:1250 PXLs.PXLv3 <> ax_PL_orE constr
+R1258:1258 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1255:1256 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1252:1253 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1242:1250 PXLs.PXLv3 <> ax_PL_orE constr
+R1258:1258 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1255:1256 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.ψ var
+R1252:1253 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.φ var
+R1304:1317 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R1324:1327 PXLs.PXLv3 <> Impl constr
+R1331:1331 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1304:1317 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R1324:1327 PXLs.PXLv3 <> Impl constr
+R1331:1331 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1358:1359 PXLs.PXLv3 <> mp constr
+R1358:1359 PXLs.PXLv3 <> mp constr
+R1518:1531 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R1538:1541 PXLs.PXLv3 <> Impl constr
+R1545:1545 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1518:1531 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R1538:1541 PXLs.PXLv3 <> Impl constr
+R1545:1545 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1573:1574 PXLs.PXLv3 <> mp constr
+R1573:1574 PXLs.PXLv3 <> mp constr
+R1701:1714 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R1720:1720 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1701:1714 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R1720:1720 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1787:1795 PXLs.PXLv3 <> ax_PL_imp constr
+R1820:1823 PXLs.PXLv3 <> Impl constr
+R1828:1831 PXLs.PXLv3 <> Impl constr
+R1835:1835 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1800:1803 PXLs.PXLv3 <> Impl constr
+R1808:1811 PXLs.PXLv3 <> Impl constr
+R1815:1815 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1787:1795 PXLs.PXLv3 <> ax_PL_imp constr
+R1820:1823 PXLs.PXLv3 <> Impl constr
+R1828:1831 PXLs.PXLv3 <> Impl constr
+R1835:1835 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1800:1803 PXLs.PXLv3 <> Impl constr
+R1808:1811 PXLs.PXLv3 <> Impl constr
+R1815:1815 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R1863:1864 PXLs.PXLv3 <> mp constr
+R1863:1864 PXLs.PXLv3 <> mp constr
+R1952:1953 PXLs.PXLv3 <> mp constr
+R1952:1953 PXLs.PXLv3 <> mp constr
+R2066:2079 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R2086:2089 PXLs.PXLv3 <> Impl constr
+R2093:2093 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R2066:2079 PXLs.PXLv3 <> ax_PL_imp_exch constr
+R2086:2089 PXLs.PXLv3 <> Impl constr
+R2093:2093 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean <> BooleanDefs.r var
+R2121:2122 PXLs.PXLv3 <> mp constr
+R2121:2122 PXLs.PXLv3 <> mp constr
+R2237:2247 PXLs.phase6_expressiveness.PXL_Expressiveness_Boolean BooleanDefs <> sec

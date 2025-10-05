@@ -1,0 +1,25 @@
+﻿# SPDX-License-Identifier: Apache-2.0
+name: coq-kernel-and-overlay
+on: [push, pull_request]
+jobs:
+  kernel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: opam init -y --bare
+      - run: opam switch create . 4.14.2 -y
+      - run: opam repo add coq-released https://coq.inria.fr/opam/released
+      - run: opam install -y coq.8.20.1
+      - run: eval $(opam env) && make kernel
+  overlay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: eval $(opam env) && make overlay
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git ls-files 'coq/**/*.v' | grep -v ClassicalOverlay | xargs -I{} sh -c 'grep -HnE "(^|[^a-z])Admitted\." "{}" && exit 1 || true'
+          git ls-files 'coq/**/*.v' | grep -v ClassicalOverlay | xargs -I{} sh -c 'grep -HnE "(^|[^a-z])Axiom " "{}" && exit 1 || true'

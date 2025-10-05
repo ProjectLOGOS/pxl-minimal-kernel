@@ -1,3 +1,4 @@
+﻿(* SPDX-License-Identifier: Apache-2.0 *)
 From PXLs Require Import PXLv3.
 
 (* Metaphysical Necessity Overlay *)
@@ -7,7 +8,7 @@ Definition Son := Var 1.
 Definition Spirit := Var 2.
 Definition Essence := Var 3.
 
-Definition Meta_Necessary (φ : form) := Box φ.
+Definition Meta_Necessary (Ï† : form) := Box Ï†.
 
 Theorem meta_necessary_father : Prov (Meta_Necessary Father).
 Admitted.
@@ -44,4 +45,5 @@ Admitted.
 
 Theorem uniqueness_spirit : Prov (Impl (And Spirit (Meta_Necessary (Neg Spirit))) Bot).
 Admitted.
+
 

@@ -1,0 +1,370 @@
+DIGEST 0491402f90c893eabc9c278ca35ca34f
+FPXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms
+R64:68 PXLs.PXLv3 <> <> lib
+R70:80 PXLs.Assumptions <> <> lib
+R82:110 PXLs.phase6_expressiveness.PXL_Expressiveness_ModalDuals <> <> lib
+R137:140 PXLs.PXLv3 <> Conj constr
+R154:157 PXLs.PXLv3 <> Impl constr
+R143:146 PXLs.PXLv3 <> Impl constr
+not 123:123 <> :::x_'⩪'_x
+prf 397:404 <> dn_law_r
+binder 415:415 <> a:1
+R418:421 PXLs.PXLv3 <> Prov ind
+R424:427 PXLs.PXLv3 <> Impl constr
+R432:434 PXLs.PXLv3 <> Neg constr
+R437:439 PXLs.PXLv3 <> Neg constr
+R441:441 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:1 var
+R429:429 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:1 var
+prf 473:480 <> dn_law_l
+binder 491:491 <> a:2
+R494:497 PXLs.PXLv3 <> Prov ind
+R500:503 PXLs.PXLv3 <> Impl constr
+R519:519 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:2 var
+R506:508 PXLs.PXLv3 <> Neg constr
+R511:513 PXLs.PXLv3 <> Neg constr
+R515:515 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:2 var
+prf 616:630 <> de_morgan_and_l
+binder 641:641 <> a:3
+binder 643:643 <> b:4
+R646:649 PXLs.PXLv3 <> Prov ind
+R652:655 PXLs.PXLv3 <> Impl constr
+R675:678 PXLs.PXLv3 <> Disj constr
+R689:691 PXLs.PXLv3 <> Neg constr
+R693:693 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:4 var
+R681:683 PXLs.PXLv3 <> Neg constr
+R685:685 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:3 var
+R658:660 PXLs.PXLv3 <> Neg constr
+R663:666 PXLs.PXLv3 <> Conj constr
+R670:670 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:4 var
+R668:668 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:3 var
+prf 773:787 <> de_morgan_and_r
+binder 798:798 <> a:5
+binder 800:800 <> b:6
+R803:806 PXLs.PXLv3 <> Prov ind
+R809:812 PXLs.PXLv3 <> Impl constr
+R838:840 PXLs.PXLv3 <> Neg constr
+R843:846 PXLs.PXLv3 <> Conj constr
+R850:850 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:6 var
+R848:848 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:5 var
+R815:818 PXLs.PXLv3 <> Disj constr
+R829:831 PXLs.PXLv3 <> Neg constr
+R833:833 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:6 var
+R821:823 PXLs.PXLv3 <> Neg constr
+R825:825 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:5 var
+prf 929:942 <> de_morgan_or_l
+binder 954:954 <> a:7
+binder 956:956 <> b:8
+R959:962 PXLs.PXLv3 <> Prov ind
+R965:968 PXLs.PXLv3 <> Impl constr
+R988:991 PXLs.PXLv3 <> Conj constr
+R1002:1004 PXLs.PXLv3 <> Neg constr
+R1006:1006 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:8 var
+R994:996 PXLs.PXLv3 <> Neg constr
+R998:998 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:7 var
+R971:973 PXLs.PXLv3 <> Neg constr
+R976:979 PXLs.PXLv3 <> Disj constr
+R983:983 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:8 var
+R981:981 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:7 var
+prf 1028:1041 <> de_morgan_or_r
+binder 1053:1053 <> a:9
+binder 1055:1055 <> b:10
+R1058:1061 PXLs.PXLv3 <> Prov ind
+R1064:1067 PXLs.PXLv3 <> Impl constr
+R1093:1095 PXLs.PXLv3 <> Neg constr
+R1098:1101 PXLs.PXLv3 <> Disj constr
+R1105:1105 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:10 var
+R1103:1103 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:9 var
+R1070:1073 PXLs.PXLv3 <> Conj constr
+R1084:1086 PXLs.PXLv3 <> Neg constr
+R1088:1088 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:10 var
+R1076:1078 PXLs.PXLv3 <> Neg constr
+R1080:1080 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:9 var
+prf 1128:1136 <> dia_macro
+binder 1147:1147 <> a:11
+R1150:1153 PXLs.PXLv3 <> Prov ind
+R1161:1165 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> :::x_'⩪'_x not
+R1156:1158 PXLs.PXLv3 <> Dia constr
+R1160:1160 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:11 var
+R1166:1168 PXLs.PXLv3 <> Neg constr
+R1171:1173 PXLs.PXLv3 <> Box constr
+R1176:1178 PXLs.PXLv3 <> Neg constr
+R1180:1180 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:11 var
+R1166:1168 PXLs.PXLv3 <> Neg constr
+R1171:1173 PXLs.PXLv3 <> Box constr
+R1176:1178 PXLs.PXLv3 <> Neg constr
+R1180:1180 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:11 var
+R1156:1158 PXLs.PXLv3 <> Dia constr
+R1160:1160 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:11 var
+ind 1214:1216 <> nnf
+constr 1238:1243 <> N_Atom
+constr 1275:1279 <> N_Bot
+constr 1297:1305 <> N_NegAtom
+constr 1340:1347 <> N_NegBot
+constr 1368:1372 <> N_And
+constr 1427:1430 <> N_Or
+constr 1486:1490 <> N_Box
+constr 1531:1535 <> N_Dia
+R1224:1227 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1220:1223 PXLs.PXLv3 <> form ind
+binder 1257:1257 <> n:14
+R1260:1262 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1265:1268 PXLs.PXLv3 <> Atom constr
+R1270:1270 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> n:14 var
+R1287:1289 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1291:1293 PXLs.PXLv3 <> Bot constr
+binder 1316:1316 <> n:15
+R1319:1321 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1324:1326 PXLs.PXLv3 <> Neg constr
+R1329:1332 PXLs.PXLv3 <> Atom constr
+R1334:1334 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> n:15 var
+R1352:1354 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1357:1359 PXLs.PXLv3 <> Neg constr
+R1361:1363 PXLs.PXLv3 <> Bot constr
+binder 1387:1387 <> a:16
+binder 1389:1389 <> b:17
+R1397:1400 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1392:1394 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1396:1396 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:16 var
+R1406:1409 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1401:1403 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1405:1405 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:17 var
+R1410:1412 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1415:1418 PXLs.PXLv3 <> Conj constr
+R1422:1422 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:17 var
+R1420:1420 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:16 var
+binder 1446:1446 <> a:18
+binder 1448:1448 <> b:19
+R1456:1459 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1451:1453 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1455:1455 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:18 var
+R1465:1468 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1460:1462 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1464:1464 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:19 var
+R1469:1471 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1474:1477 PXLs.PXLv3 <> Disj constr
+R1481:1481 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:19 var
+R1479:1479 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:18 var
+binder 1505:1505 <> a:20
+R1513:1516 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1508:1510 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1512:1512 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:20 var
+R1517:1519 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1522:1524 PXLs.PXLv3 <> Box constr
+R1526:1526 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:20 var
+binder 1550:1550 <> a:21
+R1558:1561 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1553:1555 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1557:1557 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:21 var
+R1562:1564 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf:12 ind
+R1567:1569 PXLs.PXLv3 <> Dia constr
+R1571:1571 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:21 var
+scheme 1214:1216 <> nnf_ind
+scheme 1214:1216 <> nnf_sind
+def 1585:1590 <> nnfify
+def 1892:1898 <> nnf_neg
+R1598:1601 PXLs.PXLv3 <> form ind
+binder 1593:1594 <> φ:22
+R1906:1909 PXLs.PXLv3 <> form ind
+binder 1901:1902 <> φ:23
+R1606:1609 PXLs.PXLv3 <> form ind
+R1914:1917 PXLs.PXLv3 <> form ind
+R1622:1623 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ:22 var
+R1634:1637 PXLs.PXLv3 <> Atom constr
+R1644:1647 PXLs.PXLv3 <> Atom constr
+R1655:1657 PXLs.PXLv3 <> Bot constr
+R1662:1664 PXLs.PXLv3 <> Bot constr
+R1670:1672 PXLs.PXLv3 <> Neg constr
+R1680:1686 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R1695:1698 PXLs.PXLv3 <> Conj constr
+R1707:1710 PXLs.PXLv3 <> Conj constr
+R1724:1729 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R1713:1718 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R1738:1741 PXLs.PXLv3 <> Disj constr
+R1750:1753 PXLs.PXLv3 <> Disj constr
+R1767:1772 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R1756:1761 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R1781:1784 PXLs.PXLv3 <> Impl constr
+R1793:1796 PXLs.PXLv3 <> Disj constr
+R1811:1816 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R1799:1805 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R1825:1827 PXLs.PXLv3 <> Box constr
+R1835:1837 PXLs.PXLv3 <> Box constr
+R1840:1845 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R1855:1857 PXLs.PXLv3 <> Dia constr
+R1865:1867 PXLs.PXLv3 <> Dia constr
+R1870:1875 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R1930:1931 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ:23 var
+R1942:1945 PXLs.PXLv3 <> Atom constr
+R1952:1954 PXLs.PXLv3 <> Neg constr
+R1957:1960 PXLs.PXLv3 <> Atom constr
+R1969:1971 PXLs.PXLv3 <> Bot constr
+R1976:1978 PXLs.PXLv3 <> Neg constr
+R1980:1982 PXLs.PXLv3 <> Bot constr
+R1988:1990 PXLs.PXLv3 <> Neg constr
+R1998:2003 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R2012:2015 PXLs.PXLv3 <> Conj constr
+R2024:2027 PXLs.PXLv3 <> Disj constr
+R2042:2048 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R2030:2036 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R2057:2060 PXLs.PXLv3 <> Disj constr
+R2069:2072 PXLs.PXLv3 <> Conj constr
+R2087:2093 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R2075:2081 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R2102:2105 PXLs.PXLv3 <> Impl constr
+R2114:2117 PXLs.PXLv3 <> Conj constr
+R2131:2137 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R2120:2125 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify:24 def
+R2146:2148 PXLs.PXLv3 <> Box constr
+R2156:2158 PXLs.PXLv3 <> Dia constr
+R2161:2167 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+R2177:2179 PXLs.PXLv3 <> Dia constr
+R2187:2189 PXLs.PXLv3 <> Box constr
+R2192:2198 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg:25 def
+prf 2218:2227 <> nnf_closed
+prf 2263:2276 <> nnf_neg_closed
+binder 2238:2239 <> φ:28
+R2242:2244 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf ind
+R2247:2252 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnfify def
+R2254:2255 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ:28 var
+binder 2287:2288 <> φ:29
+R2291:2293 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf ind
+R2296:2302 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf_neg def
+R2304:2305 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ:29 var
+R2351:2356 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Atom constr
+R2351:2356 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Atom constr
+R2371:2375 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Bot constr
+R2371:2375 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Bot constr
+R2418:2422 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_And constr
+R2418:2422 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_And constr
+R2443:2446 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Or constr
+R2443:2446 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Or constr
+R2467:2470 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Or constr
+R2467:2470 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Or constr
+R2491:2495 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Box constr
+R2491:2495 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Box constr
+R2516:2520 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Dia constr
+R2516:2520 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Dia constr
+R2564:2572 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_NegAtom constr
+R2564:2572 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_NegAtom constr
+R2587:2594 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_NegBot constr
+R2587:2594 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_NegBot constr
+R2633:2636 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Or constr
+R2633:2636 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Or constr
+R2657:2661 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_And constr
+R2657:2661 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_And constr
+R2682:2686 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_And constr
+R2682:2686 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_And constr
+R2707:2711 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Dia constr
+R2707:2711 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Dia constr
+R2732:2736 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Box constr
+R2732:2736 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> N_Box constr
+prf 2757:2772 <> double_neg_equiv
+binder 2783:2783 <> a:30
+R2786:2789 PXLs.PXLv3 <> Prov ind
+R2803:2807 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> :::x_'⩪'_x not
+R2792:2794 PXLs.PXLv3 <> Neg constr
+R2797:2799 PXLs.PXLv3 <> Neg constr
+R2801:2801 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:30 var
+R2808:2808 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:30 var
+R2808:2808 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:30 var
+R2792:2794 PXLs.PXLv3 <> Neg constr
+R2797:2799 PXLs.PXLv3 <> Neg constr
+R2801:2801 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:30 var
+R2840:2841 PXLs.PXLv3 <> mp constr
+R2852:2853 PXLs.PXLv3 <> mp constr
+R2864:2878 PXLs.PXLv3 <> ax_PL_and_intro constr
+R2904:2907 PXLs.PXLv3 <> Impl constr
+R2912:2914 PXLs.PXLv3 <> Neg constr
+R2917:2919 PXLs.PXLv3 <> Neg constr
+R2881:2884 PXLs.PXLv3 <> Impl constr
+R2887:2889 PXLs.PXLv3 <> Neg constr
+R2892:2894 PXLs.PXLv3 <> Neg constr
+R2936:2943 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> dn_law_l prfax
+R2958:2965 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> dn_law_r prfax
+R2840:2841 PXLs.PXLv3 <> mp constr
+R2852:2853 PXLs.PXLv3 <> mp constr
+R2864:2878 PXLs.PXLv3 <> ax_PL_and_intro constr
+R2904:2907 PXLs.PXLv3 <> Impl constr
+R2912:2914 PXLs.PXLv3 <> Neg constr
+R2917:2919 PXLs.PXLv3 <> Neg constr
+R2881:2884 PXLs.PXLv3 <> Impl constr
+R2887:2889 PXLs.PXLv3 <> Neg constr
+R2892:2894 PXLs.PXLv3 <> Neg constr
+R2936:2943 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> dn_law_l prfax
+R2958:2965 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> dn_law_r prfax
+prf 2984:3002 <> de_morgan_and_equiv
+binder 3013:3013 <> a:31
+binder 3015:3015 <> b:32
+R3018:3021 PXLs.PXLv3 <> Prov ind
+R3038:3042 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> :::x_'⩪'_x not
+R3024:3026 PXLs.PXLv3 <> Neg constr
+R3029:3032 PXLs.PXLv3 <> Conj constr
+R3036:3036 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:32 var
+R3034:3034 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:31 var
+R3043:3046 PXLs.PXLv3 <> Disj constr
+R3057:3059 PXLs.PXLv3 <> Neg constr
+R3061:3061 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:32 var
+R3049:3051 PXLs.PXLv3 <> Neg constr
+R3053:3053 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:31 var
+R3043:3046 PXLs.PXLv3 <> Disj constr
+R3057:3059 PXLs.PXLv3 <> Neg constr
+R3061:3061 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:32 var
+R3049:3051 PXLs.PXLv3 <> Neg constr
+R3053:3053 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:31 var
+R3024:3026 PXLs.PXLv3 <> Neg constr
+R3029:3032 PXLs.PXLv3 <> Conj constr
+R3036:3036 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:32 var
+R3034:3034 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:31 var
+prf 3090:3107 <> de_morgan_or_equiv
+binder 3118:3118 <> a:33
+binder 3120:3120 <> b:34
+R3123:3126 PXLs.PXLv3 <> Prov ind
+R3143:3147 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> :::x_'⩪'_x not
+R3129:3131 PXLs.PXLv3 <> Neg constr
+R3134:3137 PXLs.PXLv3 <> Disj constr
+R3141:3141 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:34 var
+R3139:3139 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:33 var
+R3148:3151 PXLs.PXLv3 <> Conj constr
+R3162:3164 PXLs.PXLv3 <> Neg constr
+R3166:3166 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:34 var
+R3154:3156 PXLs.PXLv3 <> Neg constr
+R3158:3158 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:33 var
+R3148:3151 PXLs.PXLv3 <> Conj constr
+R3162:3164 PXLs.PXLv3 <> Neg constr
+R3166:3166 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:34 var
+R3154:3156 PXLs.PXLv3 <> Neg constr
+R3158:3158 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:33 var
+R3129:3131 PXLs.PXLv3 <> Neg constr
+R3134:3137 PXLs.PXLv3 <> Disj constr
+R3141:3141 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> b:34 var
+R3139:3139 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:33 var
+prf 3195:3209 <> dia_macro_equiv
+binder 3220:3220 <> a:35
+R3223:3226 PXLs.PXLv3 <> Prov ind
+R3234:3238 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> :::x_'⩪'_x not
+R3229:3231 PXLs.PXLv3 <> Dia constr
+R3233:3233 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:35 var
+R3239:3241 PXLs.PXLv3 <> Neg constr
+R3244:3246 PXLs.PXLv3 <> Box constr
+R3249:3251 PXLs.PXLv3 <> Neg constr
+R3253:3253 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:35 var
+R3239:3241 PXLs.PXLv3 <> Neg constr
+R3244:3246 PXLs.PXLv3 <> Box constr
+R3249:3251 PXLs.PXLv3 <> Neg constr
+R3253:3253 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:35 var
+R3229:3231 PXLs.PXLv3 <> Dia constr
+R3233:3233 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> a:35 var
+prf 3285:3294 <> nnf_exists
+binder 3305:3306 <> φ:36
+R3309:3315 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3319:3320 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3316:3318 <> φ':37
+R3338:3341 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3321:3324 PXLs.PXLv3 <> Prov ind
+R3329:3333 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> :::x_'⩪'_x not
+R3327:3328 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ:36 var
+R3334:3336 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ':37 var
+R3334:3336 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ':37 var
+R3327:3328 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ:36 var
+R3342:3344 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> nnf ind
+R3346:3348 PXLs.phase6_expressiveness.PXL_Expressiveness_NormalForms <> φ':37 var
